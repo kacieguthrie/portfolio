@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Full Screen Nav Bar */
+nav {
+  background: #FFF;
+  display: flex;
+  font-size: 1.4rem;
+  font-family: 'Numans', sans-serif;
+  height: 85px;
+  padding: 1rem 4rem 1rem 4rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  font-size: 2rem;
+}
+
+.nav-links {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  padding-left: 4rem;
+}
+
+.logo span {
+  padding-left: 1rem;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.logo-fullscreen {
+  /* display: none; */
+}
+
+/* mobile typography */
+h1  {
+  font-size: 3.6rem;
+  padding-bottom: 2rem;
+  font-family: Numans, sans-serif;
+
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding: 2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+a {
+	text-decoration: none;
+  color: inherit;
+}
+
+/* buttons */
+.btn {
+  padding: 1rem 1.6rem 1rem 1.6rem;
+  margin: 2rem;
+  border: black solid 1px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.btn-dark {
+  border: #000 solid 1px;
+  color: #000;
+}
+
+.btn-light {
+  border: #fff solid 1px;
+  color: #fff;
+}
+
+/* zeehive hero */
+
+
+.hero {
+
+  /* background: url(/images/zeehive/hero-banner-full.png) top center no-repeat; */
+}
+
+
+
+#zeehive-logo-text {
+  font-family: 'Michroma', sans-serif;
+  font-size: 3.4rem;
+}
+
+/* Home page */
+
+.wrapper {
+  top: 85px;
+  position: relative;
+}
+
+.hero.home {
+  border: solid red 2px;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 90vh;
+}
+
+.hero-logo {
+  height: 34rem;
+  /* border: solid green 2px; */
+}
+
+.hero-text {
+  margin-left: 4rem;
+  font-weight: 100;
+}
+
+.projects-heading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.projects {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: blue solid 2px; */
+
+}
+
+.projects .zeehive {
+  background: linear-gradient(rgba(218,170,26,.7), rgba(218,170,26,.7)),
+  url(/images/home/zeehive-cover.png)
+  center / cover
+  no-repeat
+  rgba(218,170,26,.7);
+}
+
+
+.projects .pt-woodschool {
+  background:
+  linear-gradient(rgba(78,136,162,.7), rgba(78,136,162,.7)),
+  url(/images/home/pt-woodschool-cover.png)
+  center / cover
+  no-repeat
+  rgba(218,170,26,.7);
+}
+
+.secondary-project {
+  /* border: red solid 2px; */
+  height: 40rem;
+  min-width: 400px;
+  max-width: 800px;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+.secondary-project p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.project-text {
+  text-align: center;
+  margin-bottom: 9rem;
+  color: #fff;
+  /* border: green solid 2px; */
+}
+
+.more-projects {
+  height: 32rem;
+  width: 100vw;
+  text-align: center;
+  padding-top: 10rem;
+  border: green solid 2px;
+}
+
+/* contact */
+/* .social-links {
+  color: blue;
+  font-size: 1.6rem;
+} */

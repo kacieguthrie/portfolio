@@ -2,58 +2,75 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"
+    <meta name="viewport" content="width=device-width, initial-scale=1"</meta>
     <title>Kacie Guthrie Design Portfolio</title>
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Numans" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
   </head>
   <body>
-    <containter>
-      <nav>
-        <ul class="nav-links">
-          <li>
-            <a href= "#recent-work">Work</a>
-          </li>
-          <li>
-            <a href= "/about">About</a>
-          </li>
-          <li>
-            <a href= "/resume">Resume</a>
-          </li>
-          <li>
-            <a href= "#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="hero">
-        <img class= "hero-logo" src="../images/logo-rectangle-large.png">
+    <nav>
+      <a href="/index.html" class="logo">
+        <!-- <img src="/images/global/logo-mobile.png" class="logo-mobile">
+        <img src="/images/global/logo-rectangle-small.png" class="logo-fullscreen">
+        <span class="logo-fullscreen text">Kacie <br>Guthrie</span> -->
+      </a>
+
+      <ul class="nav-links">
+        <li>
+          <a href= "#recent-work">work</a>
+        </li>
+        <li>
+          <a href= "/about">about</a>
+        </li>
+        <li>
+          <a href= "/resume">resume</a>
+        </li>
+        <li>
+          <a href= "#contact">contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <section class="hero home">
+        <img class= "hero-logo" src="../images/home/logo-rectangle-large.png">
         <div class="hero-text">
           <h3>Hello!</h3>
           <h1>I'm Kacie Guthrie,</h1>
           <h2>a UX designer and multimedia craftsperson based in Washington State.
             I design thoughtful experiences for humans in the digital and physical world.</h2>
         </div>
+        <!-- <a href="#recent-work"
+          <i> font awesome arrow </i>
+        <a/> -->
       </section>
-      <section class="projects">
+      <div class="projects-heading">
         <h4>Recent Work</h4>
-        <article class="secondary-project zeehive"
+      </div>
+      <section class="projects">
+        <article class="secondary-project zeehive overlay">
           <div class="project-text">
             <h1>Zeehive</h1>
             <p>Saas cloud storage system for organizing, storing, and creating content.</p>
-            <div class="btn dark">
+            <div class="btn btn-light">
               <a href="/zeehive-case-study.html">Case Study</a>
             </div>
           </div>
         </article>
-        <article class="secondary-project pt-woodschool"
+        <article class="secondary-project pt-woodschool overlay">
           <div class="project-text">
             <h1>Port Townsend School <br> of Woodworking</h1>
             <p>Website redesign, narrative development, and promotional materials.</p>
-            <div class="btn dark">
+            <div class="btn btn-light">
               <a href="/pt-woodschool-case-study">Case Study</a>
             </div>
           </div>
         </article>
       </section>
+
       <section class="more-projects">
         <div class="more-projects-text">
           <h2>Still curious?<br>Here are a few more projects I've done in the real world</h2>
@@ -66,17 +83,19 @@
         <div class="contact-text">
           <h3>Currently available for design projects</h3>
           <blockquote>Let's Connect</blockquote>
-          <div class="social-links">
-            <a href="https://github.com/kacieguthrie" alt="Github" target="_blank">
-              <img src="#">
-            </a>
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/kacieguthrie" alt="Github" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
             <a href="https://www.linkedin.com/in/kacie-guthrie-734b13156/" alt="LinkedIn" target="_blank">
               <img src="#">
             </a>
             <a href="https://www.instagram.com/tiskstaskswispswasps" alt="Instagram" target="-blank">
               <img src="#">
             </a>
-          </div>
+          </ul>
           <div class="email-contact">
             <img src="#">
             <a href="mailto:kacieguthrie@gmail.com">
@@ -90,6 +109,6 @@
           <h5>Designed and developed by Kacie Guthrie <br> ©Kacie Guthrie</h5>
         </div>
       </footer>
-    </containter>
+    </div>
   </body>
 </html>
