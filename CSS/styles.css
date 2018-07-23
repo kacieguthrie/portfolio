@@ -8,6 +8,14 @@ html, body {
 
 }
 
+/* Global colors */
+:root {
+  --color-light: #EBF3F5;
+  --color-dark: #212232;
+  --color-blood: #BA0B0B;
+  --zeehive-blue: #C9EBF9;
+}
+
 /* Full Screen Nav Bar */
 nav {
   background: #FFF;
@@ -76,16 +84,20 @@ h4 {
 
 h5 {
   font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 p {
   font-size: 1.4rem;
+  color: black;
 }
 
 a {
 	text-decoration: none;
   color: inherit;
 }
+
+
 
 /* buttons */
 .btn {
@@ -196,7 +208,7 @@ a {
   margin: 0 auto;
 }
 
-.project-text {
+.project-text-cover {
   text-align: center;
   margin-bottom: 9rem;
   color: #fff;
@@ -211,8 +223,44 @@ a {
   border: green solid 2px;
 }
 
+
 /* contact */
-/* .social-links {
-  color: blue;
-  font-size: 1.6rem;
-} */
+
+.contact {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  padding: 7rem;
+}
+
+.contact-text {
+  text-align: center;
+}
+
+.social-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 15rem;
+  /* border: solid white 2px; */
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.envelope {
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+
+/* footer */
+.footer-rainbow {
+  height: 1.5rem;
+  background:
+  url(/images/global/footer-rainbow.png)
+  center / cover
+  no-repeat;
+}
+
+footer {
+  padding: 1rem 0 5rem 4rem;
+}
