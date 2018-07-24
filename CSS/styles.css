@@ -77,6 +77,7 @@ a {
   border: black solid 1px;
   display: inline-block;
   text-transform: uppercase;
+  letter-spacing: .6px;
   margin: 0 auto;
 }
 
@@ -153,11 +154,7 @@ nav {
   padding-bottom: 2rem;
 }
 
-.envelope {
-  display: inline-block;
-  position: relative;
-  float: left;
-}
+
 
 /* footer */
 .footer-rainbow {
@@ -221,7 +218,6 @@ footer {
     rgba(218,170,26,.7);
 }
 
-
 .projects .pt-woodschool {
   background:
     linear-gradient(rgba(78,136,162,.7), rgba(78,136,162,.7)),
@@ -243,8 +239,9 @@ footer {
 }
 
 .secondary-project p {
+  color: var(--color-light);
   width: 60%;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
 }
 
 .project-text-cover {
@@ -266,15 +263,21 @@ footer {
 
 /* zeehive casestudy */
 
+.hero-wrapper {
+
+}
 
 .hero-content{
   text-align: center;
 }
 
-
 #zeehive-logo-text {
   font-family: 'Michroma', sans-serif;
   font-size: 3.4rem;
+}
+
+.zeehive-blue-background {
+  background: var(--zeehive-blue);
 }
 
 .container-sm {
@@ -329,48 +332,4 @@ footer {
   background: var(--zeehive-blue);
   padding: 3rem;
   border-radius: 0 40px 40px 40px;
-}
-
-
-
-
-/* contact */
-
-.contact {
-  color: var(--color-light);
-  background-color: var(--color-dark);
-  padding: 7rem;
-}
-
-.contact-text {
-  text-align: center;
-}
-
-.social-link-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 15rem;
-  /* border: solid white 2px; */
-  margin: 0 auto;
-  padding-bottom: 2rem;
-}
-
-.envelope {
-  display: inline-block;
-  position: relative;
-  float: left;
-}
-
-/* footer */
-.footer-rainbow {
-  height: 1.5rem;
-  background:
-  url(/images/global/footer-rainbow.png)
-  center / cover
-  no-repeat;
-}
-
-footer {
-  padding: 1rem 0 5rem 4rem;
 }
