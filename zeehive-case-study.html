@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Numans" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
 
@@ -67,10 +68,12 @@
 
       <!-- Project Summary -->
       <section>
-        <div class="btn-dark">
-          <a href="#">prototype</a>
+        <div class="btn-wrapper zeehive-blue-background">
+          <div class="btn btn-dark">
+            <a href="#">prototype</a>
+          </div>
         </div>
-        <div class="summary-details">
+        <div class="summary-details container-sm">
           <div class="summary-detail-section">
             <h2>Tools</h2>
             <p>Figma <br>Google Forms <br>Balsamiq <br>Invision <br>Maze</p>
@@ -92,7 +95,7 @@
             <p>8 Weeks</p>
           </div>
         </div>
-        <div class="project-text">
+        <div class="project-text container-sm">
           <h2>Problem</h2>
           <h3>Cloud storage users have difficulty finding a file again after it is uploaded.
           The majority of my users reported that they regularly lose or forget about files. </h3>
@@ -104,9 +107,9 @@
       <!-- Research and Discovery -->
       <section>
         <div class="section-header">
-          <h2>Reserch & Discovery</h2>
+          <h2>Research & Discovery</h2>
         </div>
-        <div class="project-text">
+        <div class="project-text container-sm">
           <h2>User Surveys</h2>
           <h3>Insights</h3>
           <ul>
@@ -125,19 +128,21 @@
           </ul>
         </div>
         <div class="highlight">
-          <h4>Organization is a problem for 90% of my users.</h4>
-          <ul>
-            <li>
-              <h3>However, 0% reported using organizational tools such as tags or bookmarks,
-              and fewer than half were putting most of their files into folders.</h3>
-            </li>
-            <li>
-              <h3>Users who filed their documents in folders were twice as likely to
-              find their files again.</h3>
-            </li>
-          </ul>
+          <div class="container-lg">
+            <h4>Organization is a problem for 90% of my users.</h4>
+            <ul>
+              <li>
+                <h3>However, 0% reported using organizational tools such as tags or bookmarks,
+                and fewer than half were putting most of their files into folders.</h3>
+              </li>
+              <li>
+                <h3>Users who filed their documents in folders were twice as likely to
+                find their files again.</h3>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="project-text">
+        <div class="project-text container-sm">
           <h3>How easy is it to find your files again in your cloud storage vs.
             How do you look for your files?</h3>
           <!-- Placeholder for ChartJS -->
@@ -145,40 +150,48 @@
           <p>Analysis of user flows for onboarding, uploading an item, and organizing an item.
             I  found that the organization process often required 3 or 4 clicks per item. </p>
           <div class="cloud-storage-logos">
-            <img src="#" alt="box logo">
-            <img src="#" alt="dropbox logo">
-            <img src="#" alt="evernote logo">
+            <img src="/images/zeehive/box-logo.png" alt="box logo">
+            <img src="/images/zeehive/dropbox-logo.png" alt="dropbox logo">
+            <img src="/images/zeehive/evernote-logo.png" alt="evernote logo">
           </div>
-          <div class="btn-dark">
-            <a href="#">See Full Analysis</a>
+          <div class="btn-wrapper">
+            <div class="btn btn-dark">
+              <a href="#">See Full Analysis</a>
+            </div>
           </div>
           <h2>Personas</h2>
           <h3>I developed two personas for this product. For the MVP, I focused more on the
             needs of the “Storage Focused” user to keep the project in scope. </h3>
         </div>
-        <div class="">
-          <div class="persona">
-            <h5>Storage Focused</h5>
-            <h3>Peter VanNess</h3>
-            <img src="#" alt="cool dude with sunglasses">
-            <p>Make notes<br>Save links<br>Upload photos<br>Backup files<br>Deal with a large files</p>
-          </div>
-          <div class="persona">
-            <h5>Communication Focused</h5>
-            <h3>Paige Sandoval</h3>
-            <img src="#" alt="hip lady with attitude">
-            <p>Make notes<br>Save links<br>Share files with coworkers<br>Create shared libraries<br>Push to social media</p>
+        <div class="persona-summary container-sm ">
+          <div class="container-half">
+            <div class="persona">
+              <h5>Storage Focused</h5>
+              <h3>Peter VanNess</h3>
+              <img src="/images/zeehive/storage-persona.png" alt="cool dude with sunglasses">
+              <p>Make notes<br>Save links<br>Upload photos<br>Backup files<br>Deal with a large files</p>
+            </div>
+            <div class="persona">
+              <h5>Communication Focused</h5>
+              <h3>Paige Sandoval</h3>
+              <img src="/images/zeehive/social-persona.png" alt="hip lady with attitude">
+              <p>Make notes<br>Save links<br>Share files with coworkers<br>Create shared libraries<br>Push to social media</p>
+            </div>
           </div>
         </div>
-        <h2>User stories and user flows</h2>
-        <h3>Major Tasks</h3>
-        <p>Onboarding<br>Content Creation<br>Adding Content<br>Organizing Content<br>Sharing Content*<br></p>
-        <p>*My researched showed my users wanted to be able to collaborate. Sharing with teams and individuals was
-          included in the user stories, but I ended up drastically simplifying this feature to keep the project in
-          scope for the MVP.</p>
-        <img src="#" alt="User Flow Thumbnail">
-        <div class="btn-dark">
-          <a href="#">See Detailed User Flows</a>
+        <div class="container-sm">
+          <h2>User stories and user flows</h2>
+          <h3>Major Tasks</h3>
+          <p>Onboarding<br>Content Creation<br>Adding Content<br>Organizing Content<br>Sharing Content*<br></p>
+          <p>*My researched showed my users wanted to be able to collaborate. Sharing with teams and individuals was
+            included in the user stories, but I ended up drastically simplifying this feature to keep the project in
+            scope for the MVP.</p>
+          <img src="#" alt="User Flow Thumbnail">
+          <div class="btn-wrapper">
+            <div class="btn btn-dark">
+              <a href="#">See Detailed User Flows</a>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Wireframes and Prototype -->
@@ -186,28 +199,30 @@
         <div class="section-header">
           <h2>Wireframes & Prototype</h2>
         </div>
-        <div class="project-text">
+        <div class="project-text container-sm">
           <p>Now for the fun part! I sketched out a ton of different layouts for the dashboard
             and landing page and focused on my highest priority user stories: the sign up process,
             uploading files, creating new documents, and organizing files. </p>
         </div>
-        <div class="wide-container">
-          <img src="#" alt="sketches">
+        <div class="container-lg">
+          <img src="/images/zeehive/sketches.png" alt="sketches">
           <div class="comment-card ne">
             <h3>Organization vs. Content Creation</h3>
             <p>Early designs had a user flow that didn’t allow users to upload an item without
               organizing it or assigning it to a team. This made the system more organized, but it
               also make it more difficult for users to accomplish their primary goal: adding content!</p>
           </div>
-          <img src="#" alt="Wireframe">
+          <img src="/images/zeehive/grid-wireframe.png" alt="Wireframe">
           <div class="comment-card nw">
             <h3>Tweaking UI Patterns</h3>
             <p>I was pretty convinced in the wireframe stage that a horizontally expanding menu
               would work before it was immediately rejected in my first round of user testing.
               Thanks for keeping me honest, testers. </p>
           </div>
-          <div class="btn-dark">
-            <a href="#">See Wireframes</a>
+          <div class="btn-wrapper">
+            <div class="btn btn-dark">
+              <a href="#">See Wireframes</a>
+            </div>
           </div>
         </div>
       </section>
@@ -228,15 +243,16 @@
               The accessability of boxes, ways to filter and sort, for example, transformed
               significantly.</p>
           </div>
-          <img src="#" alt="Sidebar progression">
-          <img src="" alt="final sidebar">
+          <img src="/images/zeehive/wireframe-sidebar.png" alt="">
+          <img src="/images/zeehive/sidebar-in-progress.png" alt="Sidebar progression">
+          <img src="/images/zeehive/final-sidebar.png" alt="final sidebar">
           <div class="comment-card ne">
             <h3>A Simple Stragety</h3>
             <p>Users liked being able to drag and drop files into the boxes on the side bar.
               They could also view any uncategorized files using the “unboxed” filter. Unorganized
               files could then be sorted, deleted, or ignored.</p>
           </div>
-          <img src="" alt="Notes Mockup">
+          <img src="/images/zeehive/note-share.png" alt="Notes Mockup">
           <img src="" alt="Sharing Modal Mockup">
           <h5>Make Notes, Share Content</h5>
           <div class="comment-card se">
@@ -246,9 +262,11 @@
               like. This helped me decide things like how much space I should make for user-generated
               titles and what a desktop would look like with a variety of file types.</p>
           </div>
-          <img src="" alt="Final dashboard grid">
-          <div class="btn-dark">
-            <a href="#">See Full Mockups</a>
+          <img src="/images/zeehive/final-grid.png" alt="Final dashboard grid">
+          <div class="btn-wrapper">
+            <div class="btn btn-dark">
+              <a href="#">See Full Mockups</a>
+            </div>
           </div>
         </div>
       </section>
@@ -257,16 +275,18 @@
         <div class="section-header">
           <h2>Branding</h2>
         </div>
-        <div class="project-text">
-          <img src="" alt="Moodboard thumbnail">
-          <h3>Moodboard</h3>
-          <p>In creating a moodboard for this project I knew that the app needed to appear relatively
-            neutral in order to structure user content with out competing with it. Visual inspiration
-            for this project came from these library photos.</p>
+        <div class="project-text container-sm">
+          <div class="container-half">
+            <img src="/images/zeehive/moodboard.png" alt="Moodboard thumbnail">
+            <h3>Moodboard</h3>
+            <p>In creating a moodboard for this project I knew that the app needed to appear relatively
+              neutral in order to structure user content with out competing with it. Visual inspiration
+              for this project came from these library photos.</p>
+          </div>
           <h3>Name and Logo</h3>
           <p>The name and logo developed from a honeycomb concept representing an efficient storage system.
             The hexagonal logo scaled well and had potential for fun visual motifs. </p>
-            <img src="" alt="Logo sketches and iterations">
+            <img src="/images/zeehive/logo-dev.png" alt="Logo sketches and iterations">
           <h3>Style Guide</h3>
           <p>The
             <a href="#">style guide</a>
@@ -275,8 +295,8 @@
             I chose the Michroma typeface in the word mark and the cool neutral color palette to give it a
             “digital” feel. </p>
         </div>
-        <div class="wide-container">
-          <img src="" alt="Style guide thumbnail">
+        <div class="container-lg">
+          <img src="/images/zeehive/style-guide.png" alt="Style guide thumbnail">
         </div>
       </section>
       <!-- User Testing -->
@@ -284,7 +304,7 @@
         <div class="section-header">
           <h2>User Testing</h2>
         </div>
-        <div class="project-text">
+        <div class="project-text container-sm">
           <p>The second round of user testing, I tested the prototype with four users and did
             A/B testing for specific features. The hifi mockups helped me work out some of the
             color choices, simplify the sidebar, and improve user confidence. </p>
@@ -306,18 +326,18 @@
               <p>Clearer labels for where an item is filed/shared</p>
             </li>
           </ul>
-          <img src="" alt="Items added confirmation">
-          <img src="Items added thumbnail" alt="">
+          <img src="/images/zeehive/confirm-upload.png" alt="Items added confirmation">
+          <img src="/images/zeehive/confirm-add.png" alt="">
         </div>
-        <div class="wide-container">
+        <div class="container-lg">
           <div class="comment-card">
             <h3>A/B Testing</h3>
             <p>A/B testing for the location of the icons was almost an exact 50/50 split. I opted for
               the bottom position even though it was a less common pattern because it left more room
               for expansion.</p>
           </div>
-          <img src="" alt="bottom icons">
-          <img src="" alt="top icons">
+          <img src="/images/zeehive/bottom-icons.png" alt="bottom icons">
+          <img src="/images/zeehive/top-icons.png" alt="top icons">
         </div>
       </section>
       <!-- Conclusion -->
@@ -325,8 +345,10 @@
         <div class="section-header">
           <h2>Conclusion</h2>
         </div>
-        <h3>What I learned</h3>
-        <p>This project got me thinking about how we organize things. The people in my house were leaving coats and bags all over the living room even though there was a closet with hangers right by the door. I put up a row of hooks and a few baskets just outside the closet and suddenly people were putting their things away. I hypothesized that when we organize things, they don’t have to be very accurately organized in order to find them again and that might apply to our storage, too. The closet/hanger situation was too much work and just having all the coats in generally the right place was enough to solve the problem. This project would be different if the goal was storing something like financial records that relied on precision, but because my users were mostly private or small businesses, a little bit organized would be better than not organized at all. I found myself asking, where do I need hangars and where do I need hooks? </p>
+        <div class="container-sm">
+          <h3>What I learned</h3>
+          <p>This project got me thinking about how we organize things. The people in my house were leaving coats and bags all over the living room even though there was a closet with hangers right by the door. I put up a row of hooks and a few baskets just outside the closet and suddenly people were putting their things away. I hypothesized that when we organize things, they don’t have to be very accurately organized in order to find them again and that might apply to our storage, too. The closet/hanger situation was too much work and just having all the coats in generally the right place was enough to solve the problem. This project would be different if the goal was storing something like financial records that relied on precision, but because my users were mostly private or small businesses, a little bit organized would be better than not organized at all. I found myself asking, where do I need hangars and where do I need hooks? </p>
+        </div>
         <div class="next-project">
           <h2>Next Project</h2>
           <img src="" alt="arrow">
@@ -335,28 +357,29 @@
       <section class="contact">
         <div class="contact-text">
           <h3>Currently available for design projects</h3>
-          <blockquote>Let's Connect</blockquote>
-          <div class="social-links">
-            <a href="https://github.com/kacieguthrie" alt="Github" target="_blank">
-              <img src="#">
+          <h4>Let's Connect</h4>
+          <div class="social-link-container">
+            <a href="https://github.com/kacieguthrie" alt="Github" target="_blank" class="social-link">
+              <img src="/images/global/github.png" alt="">
             </a>
-            <a href="https://www.linkedin.com/in/kacie-guthrie-734b13156/" alt="LinkedIn" target="_blank">
-              <img src="#">
+            <a href="https://www.linkedin.com/in/kacie-guthrie-734b13156/" alt="LinkedIn" target="_blank" class="social-link">
+              <img src="/images/global/linkedin.png">
             </a>
-            <a href="https://www.instagram.com/tiskstaskswispswasps" alt="Instagram" target="-blank">
-              <img src="#">
+            <a href="https://www.instagram.com/tiskstaskswispswasps" alt="Instagram" target="_blank" class="social-link">
+              <img src="/images/global/instagram.png">
             </a>
           </div>
           <div class="email-contact">
-            <img src="#">
+            <i class="far fa-envelope"></i>
             <a href="mailto:kacieguthrie@gmail.com">
               <h3>kacieguthrie@gmail.com</h3>
             </a>
           </div>
-          <img src="#" class="contact-background">
         </section>
+        <div class="footer-rainbow"></div>
       <footer>
-        <div class="copyright-text"
+
+        <div class="copyright-text">
           <h5>Designed and developed by Kacie Guthrie <br>©Kacie Guthrie</h5>
         </div>
       </footer>
