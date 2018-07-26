@@ -12,9 +12,7 @@
      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
-
     <nav>
-
       <a href="/index.html" class="logo">
         <img src="/images/global/logo-mobile.png" class="logo-mobile">
         <img src="/images/global/logo-rectangle-small.png" class="logo-fullscreen">
@@ -37,20 +35,24 @@
       </ul>
     </nav>
     <div class="wrapper">
-      <section class="hero-wrapper container-lg">
-        <div class="hero-content">
-          <img src="/images/zeehive/zeehive-logo.png" class="hero-logo" alt="zeehive logo">
-          <p id="zeehive-logo-text">Zeehive</p>
-          <h4>Research | UX/UI Design | Brand Identity</h4>
-          <h3>SaaS cloud storage system for organizing, uploading, and creating content.</h3>
-          <div class="glam-shots">
-            <img src="/images/zeehive/zeehive-grid-mockup-bad.png" alt="" class="mobile">
-            <img src="/images/zeehive/zeehive-splash.png" alt="" class="mobile">
-            <img src="/images/zeehive/zeehive-glam-full.png" alt="" class="fullscreen">
+      <section class="hero-background">
+
+          <div class="hero-wrapper">
+            <div class="hero-text">
+              <img src="/images/zeehive/zeehive-logo.png" class="hero-logo" alt="zeehive logo">
+              <p id="zeehive-logo-text">Zeehive</p>
+              <h4>Research | UX/UI Design | Brand Identity</h4>
+              <h3>SaaS cloud storage system for organizing, uploading, and creating content.</h3>
+            </div>
+            <div class="glam-shots">
+              <img src="/images/zeehive/zeehive-grid-mockup-bad.png" alt="" class="mobile">
+              <img src="/images/zeehive/zeehive-glam-full.png" alt="" class="fullscreen image-responsive">
+            </div>
+            <!-- <img src="/images/zeehive/hero-banner-full.png" alt="people on computers"> -->
           </div>
-        <!-- <img src="/images/zeehive/hero-banner-full.png" alt="people on computers"> -->
+
       </section>
-      </div>
+
       <!-- <section class="hero">
         <div class="hero-content">
           <img src="/images/zeehive/zeehive-logo.png" class="hero-logo" alt="zeehive logo">
@@ -73,27 +75,29 @@
             <a href="#">prototype</a>
           </div>
         </div>
-        <div class="summary-details">
+        <div class="summary-detail-banner">
           <div class="container-sm">
-            <div class="summary-detail-section">
-              <h2>Tools</h2>
-              <p>Figma <br>Google Forms <br>Balsamiq <br>Invision <br>Maze</p>
-            </div>
-            <div class="summary-detail-section">
-              <h2>Deliverables</h2>
-              <p>
-                <a href="#">User Interviews & Surveys</a><br>
-                <a href="#">Competitive Analysis</a><br>
-                <a href="#">Personas</a><br>
-                <a href="#">User Stories & Flows</a><br>
-                <a href="#">Visual Identity</a><br>
-                <a href="#">Wireframes & Prototype</a><br>
-                <a href="#">User Testing & Design Iterations</a>
-                </p>
-            </div>
-            <div class="summary-detail-section">
-              <h2>Duration</h2>
-              <p>8 Weeks</p>
+            <div class="summary-details">
+              <div class="summary-detail-section">
+                <h2>Tools</h2>
+                <p>Figma <br>Google Forms <br>Balsamiq <br>Invision <br>Maze</p>
+              </div>
+              <div class="summary-detail-section">
+                <h2>Deliverables</h2>
+                <p>
+                  <a href="#">User Interviews & Surveys</a><br>
+                  <a href="#">Competitive Analysis</a><br>
+                  <a href="#">Personas</a><br>
+                  <a href="#">User Stories & Flows</a><br>
+                  <a href="#">Visual Identity</a><br>
+                  <a href="#">Wireframes & Prototype</a><br>
+                  <a href="#">User Testing & Design Iterations</a>
+                  </p>
+              </div>
+              <div class="summary-detail-section">
+                <h2>Duration</h2>
+                <p>8 Weeks</p>
+              </div>
             </div>
           </div>
         </div>
@@ -255,13 +259,13 @@
                 significantly.</p>
             </div>
             <div class="sidebar-a">
-              <img src="/images/zeehive/wireframe-sidebar.png" alt="">
+              <img src="/images/zeehive/wireframe-sidebar.png" alt="" class="image-responsive">
             </div>
             <div class="sidebar-b">
-              <img src="/images/zeehive/sidebar-in-progress.png" alt="Sidebar progression">
+              <img src="/images/zeehive/sidebar-in-progress.png" alt="Sidebar progression" class="image-responsive">
             </div>
             <div class="sidebar-c">
-              <img src="/images/zeehive/final-sidebar.png" alt="final sidebar" >
+              <img src="/images/zeehive/final-sidebar.png" alt="final sidebar" class="image-responsive">
             </div>
             <div class="comment-card ne sidebar-two">
               <h3>A Simple Stragety</h3>
@@ -272,9 +276,9 @@
           </div>
         </div>
           <div class="container-lg">
-            <div class="flex-wrapper">
+            <div>
               <img src="/images/zeehive/note.png" alt="Notes Mockup" class="note-img">
-              <img src="/images/zeehive/share.png" alt="Sharing Modal Window Mockup" class="share-img">
+              <img src="/images/zeehive/share.png" alt="Sharing Modal Window Mockup" class="share-img ">
             </div>
             <h5>Make Notes, Share Content</h5>
           </div>
@@ -327,7 +331,18 @@
             I chose the Michroma typeface in the word mark and the cool neutral color palette to give it a
             “digital” feel. </p>
         </div>
-          <img src="/images/zeehive/style-guide.png" alt="Style guide thumbnail" class="image-responsive">
+        <div class="container-lg">
+          <div class="image-wrapper">
+            <img src="/images/zeehive/style-guide.png" alt="Style guide thumbnail" class="image-responsive">
+            <div class="hover">
+              <div class="btn-wrapper">
+                <div class="btn btn-dark">
+                  <a href="#">Explore</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- User Testing -->
       <section>
@@ -359,7 +374,7 @@
           <img src="/images/zeehive/confirm-upload.png" alt="Items added confirmation">
           <img src="/images/zeehive/confirm-add.png" alt="">
         </div>
-        <div class="wide-container">
+        <div class="container-half">
           <div class="comment-card sw card-d">
             <h3>A/B Testing</h3>
             <p>A/B testing for the location of the icons was almost an exact 50/50 split. I opted for
@@ -367,10 +382,10 @@
               for expansion.</p>
           </div>
         </div>
-        <div class="wide-container">
+        <div class="container-lg">
           <div class="icon-options">
-            <img src="/images/zeehive/bottom-icons.png" alt="bottom icons">
-            <img src="/images/zeehive/top-icons.png" alt="top icons">
+            <img src="/images/zeehive/bottom-icons.png" alt="bottom icons" class="option-one">
+            <img src="/images/zeehive/top-icons.png" alt="top icons" class="icon-option">
           </div>
         </div>
       </section>
