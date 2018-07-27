@@ -6,9 +6,9 @@
     <title>Kacie Guthrie Design Portfolio</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Numans" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   </head>
   <body>
     <nav>
@@ -26,7 +26,7 @@
           <a href= "/about">about</a>
         </li>
         <li>
-          <a href= "/resume">resume</a>
+          <a href= "/grid-template.html">resume</a>
         </li>
         <li>
           <a href= "#contact">contact</a>
@@ -35,22 +35,25 @@
     </nav>
     <div class="wrapper">
       <section class="hero home">
-        <img class= "hero-logo" src="../images/home/logo-rectangle-large.png">
-        <div class="hero-text">
+        <img src="../images/home/logo-rectangle-large.png">
+        <div class="hero-summary">
           <h3>Hello!</h3>
           <h1>I'm Kacie Guthrie,</h1>
           <h2 class="home-special">a UX designer and multimedia craftsperson based in Washington State.
             I design thoughtful experiences for humans in the digital and physical world.</h2>
         </div>
-        <!-- <a href="#recent-work"
-          <i> font awesome arrow </i>
-        <a/> -->
       </section>
+      <div id="recent-work">
+        <a href="#recent-work">
+          <i class="fas fa-chevron-down fa-2x"></i>
+        </a>
+      </div>
       <div class="projects-heading">
+
         <h4>Recent Work</h4>
       </div>
       <section class="projects">
-        <article class="secondary-project zeehive overlay">
+        <article class="secondary-project zeehive">
           <div class="project-text-cover">
             <h1>Zeehive</h1>
             <p>Saas cloud storage system for organizing, storing, and creating content.</p>
@@ -59,7 +62,7 @@
             </div>
           </div>
         </article>
-        <article class="secondary-project pt-woodschool overlay">
+        <article class="secondary-project pt-woodschool">
           <div class="project-text-cover">
             <h1>Port Townsend School <br> of Woodworking</h1>
             <p>Website redesign, narrative development, and promotional materials.</p>
@@ -74,8 +77,10 @@
         <div class="more-projects-text">
           <h2 class="home-special">Still curious?<br>Here are a few more projects I've done in the real world</h2>
         </div>
-        <div class="btn dark">
-          <a href="/more-projects">More Projects<a>
+        <div class="btn-wrapper">
+          <div class="btn btn-dark">
+            <a href="/more-projects">More Projects<a></a>
+          </div>
         </div>
       </section>
       <section class="contact">
@@ -83,7 +88,6 @@
           <h3>Currently available for design projects</h3>
           <h4>Let's Connect</h4>
           <div class="social-link-container">
-            <!-- THIS IS WHERE THE GHOST <a> APPEARS -->
             <a href="https://github.com/kacieguthrie" alt="Github" target="_blank" class="social-link">
               <img src="/images/global/github.png" alt="">
             </a>
@@ -95,9 +99,8 @@
             </a>
           </div>
           <div class="email-contact">
-            <!-- This icon doesn't display -->
-            <i class="far fa-envelope"></i>
-            <a href="mailto:kacieguthrie@gmail.com">
+            <i class="far fa-envelope fa-2x"></i>
+            <a class="email" href="mailto:kacieguthrie@gmail.com">
               <h3>kacieguthrie@gmail.com</h3>
             </a>
           </div>
