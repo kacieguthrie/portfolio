@@ -92,12 +92,15 @@ li p {
   text-transform: uppercase;
   letter-spacing: .6px;
   margin: 0 auto;
-
 }
 
 .btn-dark {
   border: var(--color-dark) solid 1px;
   color: var(--color-dark);
+}
+
+.btn-light:hover {
+  background-color: rgba(242,242,242,.1);
 }
 
 .btn-light {
@@ -326,14 +329,14 @@ ul.bullet li p{
 
 .container-lg {
   display: grid;
-  grid-template-columns: minmax(400px, 90rem);
+  grid-template-columns: minmax(400px, 900px);
   justify-content: center;
   margin: 2rem;
 }
 
 .container-sm {
   display: grid;
-  grid-template-columns: minmax(300px, 63rem);
+  grid-template-columns: minmax(300px, 630px);
   justify-content: center;
   margin: 2rem;
 
@@ -351,7 +354,7 @@ ul.bullet li p{
 
 .wide-container {
   display: grid;
-  grid-template-columns: 1fr minmax(768px, 90rem) 1fr;
+  grid-template-columns: 1fr minmax(400px, 90rem) 1fr;
   grid-template-areas: ". center .";
   margin: 2rem;
 }
@@ -359,8 +362,6 @@ ul.bullet li p{
 .vert-center {
   align-self: center;
 }
-
-
 
 .image-responsive {
   max-width: 100%;
@@ -482,6 +483,7 @@ ul.bullet li p{
   width: 35rem;
   justify-content: space-between;
   margin: 0 auto;
+  opacity: .5;
 }
 
 .persona {
