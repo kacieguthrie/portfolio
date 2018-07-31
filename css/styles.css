@@ -252,7 +252,7 @@ h2.home-special {
 .projects .zeehive {
   background:
     linear-gradient(rgba(218,170,26,.7), rgba(218,170,26,.7)),
-    url(/images/home/zeehive-cover.png)
+    url(images/home/zeehive-cover.png)
     center / cover
     no-repeat
     rgba(218,170,26,.7);
@@ -261,7 +261,7 @@ h2.home-special {
 .projects .pt-woodschool {
   background:
     linear-gradient(rgba(78,136,162,.7), rgba(78,136,162,.7)),
-    url(/images/home/pt-woodschool-cover.png)
+    url(images/home/pt-woodschool-cover.png)
     center / cover
     no-repeat
     rgba(218,170,26,.7);
