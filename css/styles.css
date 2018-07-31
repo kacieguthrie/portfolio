@@ -120,10 +120,12 @@ nav {
   font-size: 1.4rem;
   font-family: 'Numans', sans-serif;
   height: 85px;
+  justify-content: space-between;
   padding: 1rem 4rem 1rem 4rem;
   position: fixed;
   width: 100vw;
   z-index: 999;
+
 }
 
 .logo {
@@ -136,7 +138,7 @@ nav {
 .nav-links {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav-links li {
@@ -166,6 +168,7 @@ nav {
   color: var(--color-light);
   background-color: var(--color-dark);
   padding: 7rem;
+  margin-top: 10rem;
 }
 
 .contact-text {
@@ -174,7 +177,6 @@ nav {
 
 .social-link-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
   padding-bottom: 2rem;
@@ -577,14 +579,42 @@ ul.bullet li p{
 }
 
 
-/* @media all and (max-width: 991px) {
-  .note-img{
-    width: 100%;
-  }
+ /* About Styles */
 
-  .share-img {
-    width: 50%;
-    margin: 0 auto
-  }
+ .hero-banner.about {
+   background: url(../images/about/headshot.png)
+   top / cover
+   no-repeat
+   #DADADA;
+   height: 440px;
+   max-width: 90rem;
+   margin: 0 auto 30px auto;
 
- } */
+ }
+
+.hero-title  {
+  padding-top: 10rem;
+}
+
+ .about-section {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+.border-wrapper {
+  padding-top: 30px;
+}
+
+ .about-text {
+   margin-top: 0;
+ }
+
+ .about-icon {
+   align-self: flex-start;
+   max-width: 100%;
+   min-width: 60px;
+   margin: 0 30px 0 30px;
+   padding-bottom: 30px;
+   /* border: solid red 2px; */
+ }
