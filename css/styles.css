@@ -380,7 +380,7 @@ ul.bullet li p{
   /* background-color: red; */
   background:
     url(/images/zeehive/hero-banner-full.png)
-    center / cover
+    top / cover
     no-repeat;
 }
 
