@@ -43,7 +43,7 @@ h2 {
 h3 {
   font-size: 1.6rem;
   font-weight: 200;
-  letter-spacing: 1px;
+  letter-spacing: .3px;
   line-height: 1.3;
   margin-bottom: 2rem;
 }
@@ -56,6 +56,8 @@ h4 {
 
 h5 {
   font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
@@ -413,6 +415,11 @@ ul.bullet li p{
 .summary-details{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.summary-details ul {
+
 }
 
 .comment-card {
@@ -502,8 +509,8 @@ ul.bullet li p{
 .container-sidebar {
   display: grid;
   /* border: solid red 2px; */
-  grid-area: center;
   margin: 5rem auto;
+  grid-template-columns:
 }
 
 .sidebar-a {
@@ -521,8 +528,6 @@ ul.bullet li p{
 
 .sidebar-c {
   grid-area: 3 / 3 / 5 / 5;
-  /* border: solid pink 2px; */
-  height: auto;
   justify-self: end;
   z-index: 2;
 }
@@ -530,6 +535,7 @@ ul.bullet li p{
 .sidebar-one {
   grid-area: 1 / 3 / 1 / 5;
   margin-top: -3rem;
+  margin-left: 1rem;
   /* border: solid magenta 2px; */
   width: auto;
 }
@@ -537,6 +543,7 @@ ul.bullet li p{
 .sidebar-two {
   grid-area: 4 / 1 / 4 / 3;
   margin-bottom: -3rem;
+  margin-right: 1rem;
   width: auto;
 }
 
@@ -571,7 +578,7 @@ ul.bullet li p{
   align-items: center;
   display: flex;
   justify-content: center;
-  margin: 12rem 0 8rem 0;
+  margin: 7rem 0 6rem 0;
 }
 
 .next-project .fa-chevron-right {
