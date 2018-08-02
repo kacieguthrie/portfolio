@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Numans" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
   </head>
   <body>
     <nav>
@@ -134,7 +135,11 @@
         <div class="project-text container-sm">
           <h3>How easy is it to find your files again in your cloud storage vs.
             How do you look for your files?</h3>
-          Placeholder for ChartJS data
+          <div class="container-sm">
+            <canvas id="myChart"></canvas>
+
+
+          </div>
           <h2>Competetive Analysis</h2>
           <p>Analysis of user flows for onboarding, uploading an item, and organizing an item.
             I  found that the organization process often required 3 or 4 clicks per item. </p>
@@ -422,4 +427,6 @@
       </footer>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="charts.js"></script>
 </html>
