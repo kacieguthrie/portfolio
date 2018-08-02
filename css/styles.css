@@ -25,7 +25,7 @@ html, body {
 /* mobile typography */
 
 h1  {
-  font-size: 3rem;
+  font-size: 2.7rem;
   margin-bottom: 2rem;
   font-family: Numans, sans-serif;
   line-height: normal;
@@ -118,7 +118,7 @@ li p {
   background-color: rgba(242,242,242,.1);
 }
 
-/* Full Screen Nav Bar */
+/* Mobile Nav Bar */
 .wrapper {
   top: 55px;
   position: relative;
@@ -153,9 +153,6 @@ nav {
   transition: 300ms;
 }
 
-.logo-fullscreen {
-  display: none;
-}
 
 /* contact */
 
@@ -203,6 +200,11 @@ footer {
   padding: 1rem 0 5rem 4rem;
 }
 
+.contact h3 {
+  color: #FFF;
+  font-weight: 200;
+}
+
 
 /* Home page */
 
@@ -211,14 +213,33 @@ footer {
   align-items: center;
   display: flex;
   height: 80vh;
-  max-width: 850px;
   margin: 0 auto;
+  padding: 4rem;
 }
 
 .hero-summary {
-  margin-bottom: 20px;
-  margin-left: 4rem;
-  max-width: 60rem;
+
+  display: grid;
+  align-items: center;
+  grid-template-areas:
+  "logo name name"
+  "statement statement statement";
+  grid-gap: 2rem;
+
+}
+
+.hero-summary .mobile {
+  grid-area: logo;
+  min-width: 90px;
+}
+
+.hero-summary .name {
+  grid-area: name;
+
+}
+
+.hero-summary .home-special {
+  grid-area: statement;
 }
 
 h2.home-special {
@@ -272,7 +293,6 @@ h2.home-special {
   height: 40rem;
   justify-content: center;
   min-width: 400px;
-  max-width: 800px;
 }
 
 .secondary-project p {
@@ -339,11 +359,6 @@ ul.bullet li p{
   display: grid;
   grid-template-columns: minmax(300px, 630px);
   justify-content: center;
-
-
-  /* max-width: 63rem;
-  min-width: 30rem;
-  margin: 3rem auto 0 auto; */
 }
 
 .container-half {
@@ -406,8 +421,6 @@ ul.bullet li p{
   padding: 3rem 0;
 }
 
-
-
 .comment-card {
   background-color: var(--zeehive-blue);
   padding: 3rem;
@@ -429,10 +442,6 @@ ul.bullet li p{
 .se {
   border-radius: 30px 30px 0px 30px;
 }
-
-
-
-
 
 .section-header {
   height: 9rem;
@@ -555,10 +564,10 @@ ul.bullet li p{
 
 
 
- /* Tablet and */
+ /* Tablet  */
  @media only screen and (min-width: 480px) and (max-width: 700px) {
    body {
-     background-color: gold;
+     background-color: peachpuff;
    }
 
    /* nav bar */
@@ -647,11 +656,11 @@ ul.bullet li p{
  /* Desktop */
 @media only screen and (min-width: 700px) {
   body {
-    background-color: mistyrose;
+    background-color: thistle;
   }
 
   h1  {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
   }
 
@@ -751,7 +760,6 @@ ul.bullet li p{
 
   .container-sidebar {
     display: grid;
-    /* border: solid red 2px; */
     margin: 5rem auto;
     grid-template-columns:
   }
@@ -764,7 +772,6 @@ ul.bullet li p{
   .sidebar-b {
     align-self: center;
     grid-area: 2 / 2 / 4 / 4;
-      /* border: solid cyan 2px; */
     justify-self: center;
     z-index: 1;
   }
@@ -779,7 +786,6 @@ ul.bullet li p{
     grid-area: 1 / 3 / 1 / 5;
     margin-top: -3rem;
     margin-left: 1rem;
-    /* border: solid magenta 2px; */
     width: auto;
   }
 
@@ -824,5 +830,22 @@ ul.bullet li p{
     margin: -12rem 3rem 12rem 0;
 
   }
+
+  /* home */
+  .hero.home {
+    /* max-width: 850px; */
+  }
+
+  .hero-summary {
+    grid-template-areas:
+    "name"
+    "statement";
+    padding: 1.5rem 0 1.5rem 4rem;
+  }
+  .hero.home .fullscreen {
+    min-width: 200px;
+  }
+
+
 
 }
