@@ -243,7 +243,8 @@ footer {
 }
 
 h2.home-special {
-  font-weight: 200;
+  /* font-size: 1.6rem; */
+  font-weight: 300;
   letter-spacing: .5px;
   text-transform: none;
 }
@@ -257,6 +258,7 @@ h2.home-special {
 .projects-heading {
   text-align: center;
   padding: 2rem;
+  padding: 16px;
 }
 
 .projects {
@@ -264,6 +266,7 @@ h2.home-special {
   justify-content: center;
   flex-wrap: wrap;
   width: 100vw;
+
   /* border: blue solid 2px; */
 }
 
@@ -292,7 +295,7 @@ h2.home-special {
   flex: 1;
   height: 40rem;
   justify-content: center;
-  min-width: 400px;
+  min-width: 100vw;
 }
 
 .secondary-project p {
@@ -707,7 +710,7 @@ ul.bullet li p{
     font-size: 1.4rem;
   }
 
-  /* nav bar */
+  /* full screen nav bar */
   .wrapper {
     top: 85px;
     position: relative;
@@ -833,7 +836,7 @@ ul.bullet li p{
 
   /* home */
   .hero.home {
-    /* max-width: 850px; */
+    max-width: 850px;
   }
 
   .hero-summary {
@@ -846,6 +849,10 @@ ul.bullet li p{
     min-width: 200px;
   }
 
+
+  .secondary-project {
+    min-width: 400px;
+  }
 
 
 }
