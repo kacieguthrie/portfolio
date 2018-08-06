@@ -6,7 +6,7 @@
     <title>Kacie Guthrie Design Portfolio</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Numans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
@@ -41,8 +41,8 @@
             <div class="hero-text">
               <img src="images/zeehive/zeehive-logo.png" class="hero-logo" alt="zeehive logo">
               <p id="zeehive-logo-text">zeehive</p>
-              <h4>Research | UX/UI Design | Brand Identity</h4>
-              <h3>SaaS cloud storage system for organizing, uploading, and creating content.</h3>
+              <h3>Research | UX/UI Design | Brand Identity</h3>
+              <p>SaaS cloud storage system for organizing, uploading, and creating content.</p>
             </div>
             <div class="container-lg">
               <img src="images/zeehive/zeehive-grid-mockup-bad.png" alt="" class="mobile image-responsive">
@@ -87,11 +87,11 @@
         </div>
         <div class="project-text container-sm">
           <h2>Problem</h2>
-          <h3>Cloud storage users have difficulty finding a file again after it is uploaded.
-          The majority of my users reported that they regularly lose or forget about files. </h3>
+          <p>Cloud storage users have difficulty finding a file again after it is uploaded.
+          The majority of my users reported that they regularly lose or forget about files. </p>
           <h2>Solution</h2>
-          <h3>Simplify the organization process. Focus on the most effective organizational
-            tools and make the most basic organization processes require fewer steps.</h3>
+          <p>Simplify the organization process. Focus on the most effective organizational
+            tools and make the most basic organization processes require fewer steps.</p>
         </div>
       </section>
       <!-- Research and Discovery -->
@@ -101,7 +101,7 @@
         </div>
         <div class="project-text container-sm">
           <h2>User Surveys</h2>
-          <h3>Insights</h3>
+          <h3>Insights from surveys:</h3>
           <ul class="bullet">
             <li>
               <p>Users wanted to be able to store photos and documents.</p>
@@ -117,29 +117,35 @@
             </li>
           </ul>
         </div>
-        <div class="highlight">
-          <div class="container-lg">
-            <h4>Organization is a problem for 90% of my users.</h4>
-            <ul>
-              <li>
-                <h3>However, 0% reported using organizational tools such as tags or bookmarks,
-                and fewer than half were putting most of their files into folders.</h3>
-              </li>
-              <li>
-                <h3>Users who filed their documents in folders were twice as likely to
-                find their files again.</h3>
-              </li>
+
+        <div class="project-text container-sm">
+          <h3>Storing vs. Relocating</h3>
+          <p>I asked my users two different questions:</p>
+            <ul class="bullet">
+              <li><p>After you have added a file to your cloud storage, how do you find it again?</p></li>
+              <li><p>How easy is it for you to find the file you are looking for in your cloud storage?</p></li>
             </ul>
+            <p>The combined data on these two questions showed that "Filers" (those who put their files into folders) generally had a much easier time than "Searchers" (those who used email or the search function) in relocating content.</p>
+          <div class="container-sm">
+            <canvas id="barHMobile"></canvas>
           </div>
         </div>
-        <div class="project-text container-sm">
-          <h3>How easy is it to find your files again in your cloud storage vs.
-            How do you look for your files?</h3>
-          <div class="container-sm">
-            <canvas id="myChart"></canvas>
-
-
+          <div class="highlight">
+            <div class="container-lg">
+              <h4>Organization is a problem for 90% of my users.</h4>
+              <ul>
+                <li>
+                  <p>However, 0% reported using organizational tools such as tags or bookmarks,
+                  and fewer than half were putting most of their files into folders.</p>
+                </li>
+                <li>
+                  <p>Users who filed their documents in folders were twice as likely to
+                  find their files again.</p>
+                </li>
+              </ul>
+            </div>
           </div>
+        <div class="project-text container-sm">
           <h2>Competetive Analysis</h2>
           <p>Analysis of user flows for onboarding, uploading an item, and organizing an item.
             I  found that the organization process often required 3 or 4 clicks per item. </p>
@@ -148,27 +154,40 @@
             <img src="images/zeehive/dropbox-logo.png" alt="dropbox logo">
             <img src="images/zeehive/evernote-logo.png" alt="evernote logo">
           </div>
+
           <div class="btn-wrapper">
             <div class="btn btn-dark">
-              <a href="#">See Full Analysis</a>
+              <a href="https://docs.google.com/spreadsheets/d/1RNNCd3A1ekgxnKCkT29DmbENTwNOv5TSOUKvakp7y1c/edit?usp=sharing">See Full Analysis</a>
             </div>
           </div>
           <h2>Personas</h2>
-          <h3>I developed two personas for this product. For the MVP, I focused more on the
-            needs of the “Storage Focused” user to keep the project in scope. </h3>
+          <p>I developed two personas for this product. For the MVP, I focused more on the
+            needs of the “Storage Focused” user to keep the project in scope. </p>
         </div>
         <div class="container-half">
           <div class="persona">
             <h5>Storage Focused</h5>
             <h3>Peter VanNess</h3>
             <img src="images/zeehive/storage-persona.png" alt="cool dude with sunglasses">
-            <p>Make notes<br>Save links<br>Upload photos<br>Backup files<br>Deal with a large files</p>
+            <ul>
+              <li>Make notes</li>
+              <li>Save links</li>
+              <li>Upload photos</li>
+              <li>Backup files</li>
+              <li>Deal with a large files</li>
+            </ul>
           </div>
           <div class="persona">
             <h5>Communication Focused</h5>
             <h3>Paige Sandoval</h3>
             <img src="images/zeehive/social-persona.png" alt="hip lady with attitude">
-            <p>Make notes<br>Save links<br>Share files with coworkers<br>Create shared libraries<br>Push to social media</p>
+            <ul>
+              <li>Make notes</li>
+              <li>Save links</li>
+              <li>Share files with coworkers</li>
+              <li>Create Shared Libraries</li>
+              <li>Push to social media</li>
+            </ul>
           </div>
         </div>
         <div class="container-sm">
@@ -206,7 +225,9 @@
             and landing page and focused on my highest priority user stories: the sign up process,
             uploading files, creating new documents, and organizing files. </p>
         </div>
-        <img src="images/zeehive/sketches.png" alt="sketches" class="image-responsive">
+        <div class="container-lg">
+          <img src="images/zeehive/sketches.png" alt="sketches" class="image-responsive">
+        </div>
         <div class="container-lg">
           <div class="comment-card ne card-a">
             <h3>Organization vs. Content Creation</h3>
@@ -328,7 +349,7 @@
             <div class="hover">
               <div class="btn-wrapper">
                 <div class="btn btn-dark">
-                  <a href="#">Explore</a>
+                  <a href="https://www.figma.com/file/UjqNQV9omzN8tUbCynCWZirz/Z-Hive?node-id=66%3A0" target="_blank">Explore</a>
                 </div>
               </div>
             </div>

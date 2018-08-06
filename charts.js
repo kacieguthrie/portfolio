@@ -1,10 +1,10 @@
 // Zeehive Chart
 
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
-    type: 'bar',
+var barH = document.getElementById("barHMobile");
+var myChart = new Chart(barH, {
+    type: 'horizontalBar',
     data: {
-        labels: ["Easy to find!", "", "", "", "Difficult to find"],
+        labels: ["(Easy) 1", "2", "3", "4", "(Hard) 5"],
         datasets: [{
             label: 'Email or Search',
             data: [0, 2, 5, 6, 8],
@@ -51,7 +51,9 @@ var myChart = new Chart(ctx, {
             yAxes: [{
                 ticks: {
                     beginAtZero:true
-                }
+                },
+                // categoryPercentage: 1,
+                // barPercentage: 1
             }]
         }
     }
