@@ -615,10 +615,27 @@ ul.bullet li p{
 
 
 /* PTSW Case Study */
-.icon-text-flex {
+.flex {
   display: flex;
   flex-wrap: wrap;
 }
+
+.icon-text {
+  flex: 1;
+}
+
+.icon-center {
+  /* justify-self: center; */
+  height: 50px;
+}
+
+.hero-background.ptsw {
+  background:
+    url(../images/ptsw/tool-flatlay.png)
+    top / cover
+    no-repeat;
+}
+
 
 
 
