@@ -620,8 +620,12 @@ ul.bullet li p{
   flex-wrap: wrap;
 }
 
-.icon-text {
+.flex > * {
   flex: 1;
+}
+
+.icon-text {
+  flex: 10;
 }
 
 .icon-center {
