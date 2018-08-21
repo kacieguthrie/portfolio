@@ -4,14 +4,14 @@
 
 html, body {
   font-size: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
 
 }
 
 
 
-#myChart.data.lables {
-  font-family: 'Montserrat', sans-serif;
+#my.data.lables {
+  font-family: 'Nunito', sans-serif;
 }
 
 /* Global colors */
@@ -20,42 +20,46 @@ html, body {
   --color-dark: rgba(33,34,50,1);
   --color-blue: #4E88A2;
   --zeehive-blue: #EBF3F5;
+  --color-gray: #4B4A4F
 }
 
 /* mobile typography */
 
 h1  {
-  font-size: 2.7rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
-  font-family: Numans, sans-serif;
+  font-family: 'Numans', sans-serif;
   line-height: normal;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 400;
+  letter-spacing: .9px;
   line-height: 1.4;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
-  color: var(--color-dark);
+  color: var(--color-blue);
 }
 
 h3 {
-
-  font-size: 1.6rem;
-  font-weight: 300;
+  /* font-family: 'Numans', sans-serif; */
+  font-size: 1.4rem;
+  font-weight: 600;
   letter-spacing: .2px;
   line-height: 1.3;
   margin-bottom: 2rem;
-  color: var(--color-blue);
+  color: var(--color-gray);
   /* color: #777; */
 }
 
 h4 {
-  font-family: Numans, sans-serif;
+  font-family: 'Numans', cursive;
   font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 1.3;
+  font-weight: 400;
+  /* font-style: italic; */
+  letter-spacing: .2px;
+  line-height: 1.7;
   margin-bottom: 2rem;
 }
 
@@ -68,12 +72,12 @@ h5 {
 
 p, li {
   color: rgba(33,34,50,.8);
-  font-size: 1.4rem;
-  line-height: 1.5;
+  font-size: 1.5rem;
 
 }
 
 p {
+  line-height: 1.5;
   margin-bottom: 2rem;
 }
 
@@ -86,8 +90,12 @@ p a:hover {
   color: rgba(33,34,50,.6);
 }
 
-li p {
-  margin-bottom: .5rem;
+li > * {
+  margin-bottom: .2rem;
+}
+
+strong {
+  font-weight: 500;
 }
 
 /* mobile buttons */
@@ -108,6 +116,7 @@ li p {
 }
 
 .btn a {
+  font-family: 'Nunito', sans-serif;
   font-size: 1.2rem;
 }
 
@@ -156,6 +165,7 @@ nav {
 }
 
 .nav-links li {
+  font-size: 1.2rem;
   padding-left: 1.5rem;
 }
 
@@ -193,7 +203,7 @@ nav {
 }
 
 .fa-envelope {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding-right: 1.5rem;
 }
 
@@ -261,7 +271,8 @@ footer {
 }
 
 h2.home-special {
-  /* font-size: 1.6rem; */
+  line-height: 1.2;
+  font-size: 1.6rem;
   font-weight: 300;
   letter-spacing: .5px;
   text-transform: none;
@@ -367,7 +378,7 @@ ul.bullet li p{
 }
 
 .container-lg, .container-sm, .container-half {
-  margin: 1.6rem
+  margin: 0 1.6rem 1.6rem 1.6rem
 }
 
 .container-lg {
@@ -397,7 +408,7 @@ ul.bullet li p{
 
 .highlight {
   background: var(--zeehive-blue);
-  padding: 2.5rem 0 2.5rem 0;
+  padding: 2.5rem 0 .2rem 0;
   margin-bottom: 4rem;
 }
 
@@ -407,7 +418,7 @@ ul.bullet li p{
 
 .image-responsive {
   display: block;
-  height: auto;
+  /* height: auto; */
   max-width: 100%;
   margin: 0 auto;
 }
@@ -416,12 +427,13 @@ ul.bullet li p{
   display: none;
 }
 
-.hero-background {
-  /* background-color: red; */
+.hero-background.zeehive {
+
   background:
     url(../images/zeehive/hero-banner-full.png)
     top / cover
-    no-repeat;
+    no-repeat
+    fixed;
 }
 
 .hero-wrapper {
@@ -440,14 +452,14 @@ ul.bullet li p{
 }
 
 .summary-detail-banner {
-  background: #f0f0f0;
-  padding: 3rem 0;
+  background: rgba(240, 240, 240, 1);
+  padding-top: 3rem;
   margin-bottom: 4rem;
 }
 
 .comment-card {
   background-color: var(--zeehive-blue);
-  padding: 3rem;
+  padding: 3rem 2.5rem .5rem 3rem;
   z-index: 10;
 }
 
@@ -468,11 +480,11 @@ ul.bullet li p{
 }
 
 .section-header {
-  /* height: 9rem; */
+
   text-align: center;
   padding: 2.5rem;
   color: #fff;
-  background: var(--color-dark);
+  background: var(--color-gray);
   letter-spacing: .9px;
   margin: 6rem 0;
 
@@ -563,36 +575,15 @@ ul.bullet li p{
 
  /* About Styles */
 
- .hero-banner.about {
-   background: url(../images/about/headshot.png)
-   top / cover
-   no-repeat
-   #DADADA;
-   height: 440px;
-   max-width: 90rem;
-   margin: 0 auto 30px auto;
-
- }
-
-.hero-title  {
-  padding-top: 10rem;
-}
-
  .about-section {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
  }
 
- .about-section::before{
-   border: dashed var(--color-blue) 2px;
-   content:"";
-   margin-right: -82px;
- }
-
- .no-border::before{
-   border: dashed #FFF 2px;
- }
+.about-intro {
+  padding-top: 5rem;
+}
 
 .border-wrapper {
   padding-top: 30px;
@@ -606,7 +597,7 @@ ul.bullet li p{
 
  .about-icon {
    align-self: flex-start;
-   max-width: 100%;
+   max-width: 70px;
    min-width: 60px;
    margin: 0 30px 0 30px;
    padding-bottom: 30px;
@@ -626,6 +617,7 @@ ul.bullet li p{
 
 .icon-text {
   flex: 10;
+  margin-bottom: 2rem;
 }
 
 .icon-center {
@@ -635,21 +627,75 @@ ul.bullet li p{
 
 .hero-background.ptsw {
   background:
-    url(../images/ptsw/tool-flatlay.png)
+    url(../images/ptsw/shingles.png)
     top / cover
-    no-repeat;
+    no-repeat
+    fixed;
+  height: 30vh;
+
 }
 
+.ptsw-logo {
+  padding-top: 70px;
+  margin-bottom: 20px;
+}
 
+.center-icon {
+  width: 15%;
+  margin: 0 auto;
+  color: var(--color-light);
+}
 
+.logo-group.ptsw > * {
+  flex: 1;
+  opacity: 1;
+}
 
-
-
+.border-round {
+  border: solid var(--color-light) .5px;
+  border-radius: 12px;
+}
 
  /* Tablet  */
  @media only screen and (min-width: 480px) and (max-width: 900px) {
-   body {
-     /* background-color: peachpuff; */
+   h1  {
+     font-size: 2.6rem;
+     margin-bottom: 2rem;
+   }
+
+   h2 {
+     font-size: 1.7rem;
+     font-weight: 400;
+     line-height: 1.4;
+     margin-bottom: 1.2rem;
+     text-transform: uppercase;
+   }
+
+   h3 {
+     font-size: 1.7rem;
+     line-height: 1.3;
+     margin-bottom: 1.2rem;
+   }
+
+   h4 {
+     font-size: 2rem;
+     font-weight: 300;
+     margin-bottom: 2rem;
+   }
+
+   h5 {
+     font-size: 1.2rem;
+   }
+
+   p {
+     font-size: 1.7rem;
+     line-height: 1.4;
+     letter-spacing: .3px;
+     margin-bottom: 2rem;
+   }
+
+   li p {
+     margin-bottom: .5rem;
    }
 
    /* nav bar tablet*/
@@ -676,7 +722,7 @@ ul.bullet li p{
    }
 
    .nav-links li {
-     padding-left: 4rem;
+     padding-left: 2rem;
    }
 
    .logo .mobile {
@@ -708,6 +754,11 @@ ul.bullet li p{
    }
    .hero.home .fullscreen {
      min-width: 200px;
+   }
+
+   h2.home-special {
+     line-height: 1.4;
+     font-size: 2rem;
    }
 
    /* Case Study */
@@ -753,7 +804,15 @@ ul.bullet li p{
      margin: 1rem 1rem -3rem 1rem;
      width: auto;
    }
+
+   /* tablet about */
+
+   .about-icon {
+     max-width: 100%;
+   }
  }
+
+
 
  /* Desktop */
 @media only screen and (min-width: 900px) {
@@ -762,22 +821,22 @@ ul.bullet li p{
   }
 
   h1  {
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-bottom: 2rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 400;
     line-height: 1.4;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     text-transform: uppercase;
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 1.3;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
   }
 
   h4 {
@@ -791,14 +850,18 @@ ul.bullet li p{
   }
 
   p {
-    font-size: 1.6rem;
-    line-height: 1.3;
+    font-size: 1.7rem;
+    line-height: 1.4;
     letter-spacing: .3px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   li p {
     margin-bottom: .5rem;
+  }
+
+  .video {
+    margin-bottom: 2rem;
   }
 
   .btn {
@@ -816,9 +879,9 @@ ul.bullet li p{
   }
 
   nav {
-    font-size: 1.4rem;
     height: 85px;
     padding: 1rem 4rem 1rem 4rem;
+
   }
 
   .logo {
@@ -833,6 +896,7 @@ ul.bullet li p{
   }
 
   .nav-links li {
+    font-size: 1.4rem;
     padding-left: 4rem;
   }
 
@@ -844,7 +908,7 @@ ul.bullet li p{
     display: inline-block;
   }
 
-  /* Case Study */
+  /* Zeehive Case Study */
 
   .fullscreen {
     display: inline-block;
@@ -918,6 +982,12 @@ ul.bullet li p{
     width: 50%;
   }
 
+  .card-e {
+    justify-self: end;
+    width: 65%;
+    /* margin-bottom: -10rem; */
+  }
+
   .icon-options {
     display: flex;
     justify-content: space-between;
@@ -944,14 +1014,36 @@ ul.bullet li p{
     "statement";
     padding: 1.5rem 0 1.5rem 4rem;
   }
+
   .hero.home .fullscreen {
     min-width: 200px;
   }
-
 
   .secondary-project {
     min-width: 400px;
   }
 
+  h2.home-special {
+    line-height: 1.4;
+    font-size: 2rem;
+  }
 
+  /* about */
+  .about-section::before {
+    border: dashed var(--color-blue) 2px;
+    content:"";
+    margin-right: -82px;
+  }
+
+  .no-border::before {
+    border: dashed #FFF 2px;
+  }
+
+  .headshot {
+    max-width: 90rem;
+  }
+
+  .about-icon {
+    max-width: 100%;
+  }
 }
