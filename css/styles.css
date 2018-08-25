@@ -90,8 +90,8 @@ p a:hover {
   color: rgba(33,34,50,.6);
 }
 
-li > * {
-  margin-bottom: .2rem;
+li {
+  margin-bottom: .8rem;
 }
 
 strong {
@@ -145,7 +145,8 @@ strong {
 }
 
 nav {
-  background: #FFF;
+  background:
+    linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.99),rgba(255, 255, 255, 0.90));
   display: flex;
   font-size: 1.1rem;
   font-family: 'Numans', sans-serif;
@@ -178,10 +179,10 @@ nav {
 /* contact */
 
 .contact {
-  color: var(--color-light);
+  color: #FFF;
   background-color: var(--color-dark);
-  padding: 7rem;
-  margin-top: 10rem;
+  padding: 10rem 0;
+
 }
 
 .contact-text {
@@ -193,8 +194,10 @@ nav {
   justify-content: space-between;
   margin: 0 auto;
   padding-bottom: 2rem;
-  width: 15rem;
+  width: 8rem;
 }
+
+
 
 .email-contact {
   align-items: center;
@@ -207,9 +210,10 @@ nav {
   padding-right: 1.5rem;
 }
 
-.contact h3 {
+.contact p {
   color: #FFF;
-  font-weight: 200;
+  letter-spacing: .8px;
+  font-weight: 300;
 }
 
 .contact h4 {
@@ -224,11 +228,11 @@ nav {
   url(../images/global/footer-rainbow.png)
   center / cover
   no-repeat;
-  height: 1.5rem;
+  height: 1.8rem;
 }
 
 footer {
-  padding: 1rem 0 5rem 4rem;
+  padding: 1rem 0 6rem 4rem;
 }
 
 
@@ -246,19 +250,18 @@ footer {
 }
 
 .hero-summary {
-
   display: grid;
   align-items: center;
   grid-template-areas:
-  "logo name name"
+  ". logo ."
+  "name name name"
   "statement statement statement";
-  grid-gap: 2rem;
-
+  /* grid-gap: 2rem; */
 }
 
 .hero-summary .mobile {
   grid-area: logo;
-  min-width: 90px;
+  min-width: 70px;
 }
 
 .hero-summary .name {
@@ -341,11 +344,10 @@ h2.home-special {
 }
 
 .more-projects {
-  height: 32rem;
+  display: grid;
+  align-items: center;
+  padding-top: 5rem;
   text-align: center;
-  padding-top: 10rem;
-  width: 100vw;
-  /* border: green solid 2px; */
 }
 
 /* End home page */
@@ -569,7 +571,8 @@ ul.bullet li p{
 }
 
 .next-project .fa-chevron-right {
-  margin: 0 0 17px 2rem;
+  color: var(--color-blue);
+  margin: 0 0 12px 2rem;
 }
 
 
@@ -587,8 +590,6 @@ ul.bullet li p{
 
 .border-wrapper {
   padding-top: 30px;
-  display: inline-block;
-  position: relative;
 }
 
  .about-text {
@@ -988,6 +989,13 @@ ul.bullet li p{
     /* margin-bottom: -10rem; */
   }
 
+  .card-f {
+    margin-bottom: -6rem;
+    width: 60%;
+    justify-self: center;
+  }
+
+
   .icon-options {
     display: flex;
     justify-content: space-between;
@@ -1045,5 +1053,9 @@ ul.bullet li p{
 
   .about-icon {
     max-width: 100%;
+  }
+
+  .about-intro {
+    padding-left: 7.6rem;
   }
 }
