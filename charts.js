@@ -4,7 +4,7 @@ var barH = document.getElementById("barHMobile");
 var myChart = new Chart(barH, {
     type: 'horizontalBar',
     data: {
-        labels: ["(Easy) 1", "2", "3", "4", "(Hard) 5"],
+        labels: ["(Easy) 1", "2", "3", "4", "(Difficult) 5"],
         datasets: [{
             label: 'Email or Search',
             data: [0, 2, 5, 6, 8],
@@ -59,4 +59,4 @@ var myChart = new Chart(barH, {
     }
 });
 Chart.defaults.global.defaultFontColor = '#212232';
-Chart.defaults.global.defaultFontFamily = "'Montserrat', sans-serif";
+Chart.defaults.global.defaultFontFamily = "'Nunito', sans-serif";

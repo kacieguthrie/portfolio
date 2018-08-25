@@ -14,13 +14,14 @@ html, body {
   font-family: 'Nunito', sans-serif;
 }
 
-/* Global colors */
+/* Global styles */
 :root {
   --color-light: #EBF3F5;
   --color-dark: rgba(33,34,50,1);
   --color-blue: #4E88A2;
   --zeehive-blue: #EBF3F5;
-  --color-gray: #4B4A4F
+  --color-gray: #4B4A4F;
+  --shadow: 6px 6px 15px 4px rgba(115,115,115,0.15);;
 }
 
 /* mobile typography */
@@ -98,11 +99,17 @@ strong {
   font-weight: 500;
 }
 
+.shadow {
+  box-shadow: var(--shadow);
+}
+
 /* mobile buttons */
 .btn-wrapper {
   height: 9rem;
   text-align: center;
   padding: 2.9rem;
+  position: relative;
+  z-index: 3;
 }
 
 .btn {
@@ -168,6 +175,7 @@ nav {
 .nav-links li {
   font-size: 1.2rem;
   padding-left: 1.5rem;
+
 }
 
 .nav-links a:hover {
@@ -377,6 +385,9 @@ ul.bullet li p{
 
 .zeehive-blue-background {
   background: #C9EBF9;
+  margin-top: -5rem;
+  z-index: 3;
+
 }
 
 .container-lg, .container-sm, .container-half {
@@ -434,8 +445,7 @@ ul.bullet li p{
   background:
     url(../images/zeehive/hero-banner-full.png)
     top / cover
-    no-repeat
-    fixed;
+    no-repeat;
 }
 
 .hero-wrapper {
@@ -445,8 +455,10 @@ ul.bullet li p{
 }
 
 .hero-text {
+  margin-bottom: 5rem;
   text-align: center;
 }
+
 
 .hero-logo {
   height: 15rem;
@@ -461,6 +473,7 @@ ul.bullet li p{
 
 .comment-card {
   background-color: var(--zeehive-blue);
+  /* box-shadow: var(--shadow); */
   padding: 3rem 2.5rem .5rem 3rem;
   z-index: 10;
 }
@@ -559,7 +572,7 @@ ul.bullet li p{
   z-index: 10;
 }
 
-.icon-options .option-one {
+.stagger .option-one {
   margin-bottom: 2rem;
 }
 
@@ -586,6 +599,11 @@ ul.bullet li p{
 
 .about-intro {
   padding-top: 5rem;
+}
+
+.about-outro {
+  padding-bottom: 5rem;
+  padding-left: 7.6rem;
 }
 
 .border-wrapper {
@@ -763,7 +781,7 @@ ul.bullet li p{
    }
 
    /* Case Study */
-   .summary-details{
+   .summary-details {
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
@@ -980,6 +998,7 @@ ul.bullet li p{
 
   .card-d {
     justify-self: end;
+    margin-top: 2rem;
     width: 50%;
   }
 
@@ -996,7 +1015,7 @@ ul.bullet li p{
   }
 
 
-  .icon-options {
+  .stagger {
     display: flex;
     justify-content: space-between;
     /* position: relative;
@@ -1006,9 +1025,12 @@ ul.bullet li p{
     margin: 30px auto; */
   }
 
-  .icon-options .option-one {
+  .stagger .option-one {
     margin: -12rem 3rem 12rem 0;
+  }
 
+  .stagger .option-two {
+    margin: 0 3rem 0 0;
   }
 
   /* home desktop*/
