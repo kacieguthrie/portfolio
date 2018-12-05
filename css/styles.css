@@ -135,8 +135,10 @@ strong {
 }
 
 .btn-dark:hover{
-  -webkit-box-shadow: .4px .4px 4px 1px rgba(170,170,170,.3);
-          box-shadow: .4px .4px 4px 1px rgba(170,170,170,.3);
+  /* -webkit-box-shadow: .4px .4px 4px 1px rgba(170,170,170,.3);
+          box-shadow: .4px .4px 4px 1px rgba(170,170,170,.3); */
+  background-color: var(--color-blue);
+  color: #C9EBF9;
 }
 
 .btn-light {
@@ -839,8 +841,7 @@ ul.bullet li p{
 }
 
 .ptsw-logo {
-  padding-top: 70px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .center-icon {
