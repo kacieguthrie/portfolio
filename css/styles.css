@@ -6,7 +6,7 @@
 html, body {
   font-size: 10px;
   font-family: 'Nunito', sans-serif;
-
+  scroll-behavior: smooth;
 }
 
 
@@ -366,6 +366,7 @@ h2.home-special {
   color: var(--color-blue);
   padding: 3rem;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 .projects-heading {
