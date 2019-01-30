@@ -559,11 +559,22 @@ ul.bullet li p{
 .container-half-lg {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 43rem);
-  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, 45rem);
+  grid-gap: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.container-half-lg > * {
+  max-width: 100%;
+}
+
+.half-lg-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .highlight {
@@ -700,6 +711,10 @@ ul.bullet li p{
   margin-bottom: 2rem;
 }
 
+.persona.lg {
+  max-width: none;
+}
+
 .persona ul {
   margin-top: 1rem;
 }
@@ -738,6 +753,13 @@ ul.bullet li p{
   background-color: rgba(201,235,249,.5);
   opacity: 1;
   z-index: 10;
+}
+
+.dark-hover:hover {
+  background-color: rgba(201,235,249,.9);
+  -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+          align-items: flex-start;
 }
 
 .stagger .option-one {
@@ -863,6 +885,83 @@ ul.bullet li p{
   border-radius: 12px;
 }
 
+/* moodscape mobile*/
+
+.app-feature {
+  width: 100vw;
+  height: 40rem;
+  background-color: var(--color-light);
+}
+
+.hero-background.moodscape {
+  background:
+    url(../images/moodscape/hero-bkg-safari.png)
+    center / cover
+    no-repeat;
+}
+
+#moodscape-logo-text {
+  font-family: "Comfortaa", cursive;
+  font-size: 6rem;
+}
+
+.spacer-sm {
+  height: 2rem;
+}
+
+.spacer-lg {
+  height: 4rem;
+}
+
+.inline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.logo-group-mood {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  opacity: 1;
+  max-width: 35rem;
+}
+
+.logo-group-mood > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.persona-head {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.persona-text-head {
+  margin-left: 2rem;
+  flex-grow: 4;
+}
+
+.persona-text {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.clip-circle {
+  clip-path: circle(100px at center);
+}
+
  /* Tablet  */
  @media only screen and (min-width: 480px) and (max-width: 900px) {
    h1  {
@@ -986,6 +1085,8 @@ ul.bullet li p{
      -ms-flex-wrap: wrap;
          flex-wrap: wrap;
    }
+
+
 
    .container-sidebar {
      display: -ms-grid;
