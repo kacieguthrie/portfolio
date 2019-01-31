@@ -10,6 +10,7 @@
 
       gtag('config', 'UA-124037388-2');
     </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"</meta>
     <title>Moodscape</title>
@@ -20,6 +21,13 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="images/global/favicon.png">
+
+        <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
   </head>
   <body>
     <div class="wrapper">
@@ -30,7 +38,7 @@
               <p id="moodscape-logo-text">Moodscape</p>
               <div class="container-sm">
                 <p>Health Journal for gaining insight into how your lifestyle and wellness affects your mood</p>
-                <h5>2018</h5>
+                <h5>January 2019</h5>
               </div>
             </div>
           </div>
@@ -123,28 +131,22 @@
         <div class="highlight">
           <div class="container-half">
             <div class="">
-              <h4>90%</h4>
+              <h4 style= "color: #E37070; font-size: 5rem;">90%</h4>
               <p>felt they were in an unhealthy or negative emotional state frequently or sometimes.</p>
             </div>
             <div class="">
-              <img src="images/moodscape/circle-graph.png" alt="" class="image-responsive">
-              <div class="inline">
-                <h4>70%</h4>
-                <p>were working with a therapist</p>
-              </div>
-              <div class="inline">
-                <h4>41%</h4>
-                <p>were also working with an MD</p>
-              </div>
+              <p>70% were working with a therapist</p>
+              <p>41% were also working with an MD</p>
+              <img src="images/moodscape/circle-graph.png" alt="" class="image-responsive" style= "max-height: 150px">
             </div>
             <div class="">
-              <div class="">
+              <p>Main Barriers to Journaling</p>
+              <div class="" style="color: #E37070;">
                 <h4>Lack of time</h4>
                 <h4>Forgetfulness</h4>
                 <h4>Don't know what to say</h4>
                 <h4>Guilt</h4>
               </div>
-              <p>Main Barriers to Journaling</p>
             </div>
           </div>
         </div>
@@ -338,7 +340,9 @@
           <h2>User Stories</h2>
           <p>User stories were based on my personas and I used my strategy to
             prioritize which stories would be included in the MVP.</p>
-          <img src="#" alt="user story example">
+          <div class="">
+            <h1 style="color:#E37070; ">"as a user I want to ____ so that I can ______."</h1>
+          </div>
           <div class="btn-wrapper">
             <div class="btn btn-dark">
               <a href="#">See Full User Stories</a>
@@ -386,22 +390,95 @@
         <div class="section-header" id="build">
           <h2>Building the App</h2>
         </div>
+        <div class="app-features-wrap">
+          <div class="app-features">
+            <!-- This is where the carousel feature goes -->
+            <div class="app-feature title-card">
+              <h1>Building the Mood Selector and Journal Entry</h1>
+              <i class="fas fa-chevron-right fa-2x"></i>
+              <div class="spacer-lg"></div>
+              <h4>Follow my process</h4>
+              <img src="images/moodscape/idea-board.png" alt="" class="image-responsive">
+            </div>
+            <div class="app-feature">
+              <h1>Research Insights</h1>
+              <div class="app-feature-text quote">
+                <h4>"Journaling is hard when you feel bad"</h4>
+                <h4>"Identifying specific feelings can be overwhelming"</h4>
+                <h4>Barriers to journaling: "Takes too much time", "Don't know what to say"</h4>
+                <h4>Most people identify their moods more with a face than a word</h4>
+              </div>
+            </div>
+            <div class="app-feature">
+              <h1>Strategy</h1>
+              <div class="app-feature-text">
+                <ul class=>
+                  <li><h4> - Mood selector is basic (limited options to pick from)</h4></li>
+                  <li><h4>- Flexible level of engagement. An entry can be as simple or detailed as the user needs.</h4></li>
+                  <li><h4>- Gathering data: Collecting standardized data that can be used for analytics while also
+                    allowing for unique entries through free writing.</h4></li>
+                </ul>
+              </div>
+            </div>
+            <div class="app-feature">
+              <h1>User Flows and Sketches</h1>
+              <div class="app-feature-text">
+                <p>The user flows and sketches were the real work-horse of this
+                  process where I made the most changes.
+                  Whenever possible, I like to start out working in analog because it feels less precious
+                  and I'm more likely to explore a lot of ideas.</p>
+                <img src="images/moodscape/flows.png" alt="" class="image-responsive">
+              </div>
+            </div>
+            <div class="app-feature">
+              <h1>Wireframes</h1>
+              <div class="app-feature-text">
+                <p>Here I translated user flows and sketches into wireframes and tested</p>
+                <img src="images/moodscape/wireframe-flow.png" alt="" class="image-responsive">
+              </div>
+            </div>
+            <div class="app-feature">
+              <h1>Preference Testing</h1>
+              <div class="app-feature-text">
+                <p>Most people prefered the spectrum wheel, but about half said they
+                  would like to have more than 5 mood options. Some weren’t sure which
+                  side was happy or sad since I neglected to put labels.</p>
+                <img src="images/moodscape/pref-test.png" alt="" class="image-responsive">
+              </div>
+            </div>
+            <div class="app-feature">
+              <h1>Refinements</h1>
+              <div class="app-feature-text">
+                <p>7 Moods, neutral state, and +/- labeling</p>
+                <video src="images/moodscape/mood-tracker-vid.mp4" autoplay poster="posterimage.jpg" class= "image-responsive" autoplay muted loop>
+
+                </video>
+              </div>
+            </div>
+            <div class="app-feature">
+              <h1>Prototyping and User Tests</h1>
+              <div class="app-feature-text">
+                <p>Using Maze and in-person sessions, I gave my testers a
+                  hypothetical scenario to see how they recorded the information:</p>
+
+                <img src="images/moodscape/milestones-change.png" alt="" class="image-responsive">
+                <div class="spacer-sm">  </div>
+                <p>The feedback helped me clairify the "milestones" feature for recording major life
+                  events and refine the preview feature for creating a custom health factor.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="container-sm">
           <h2>Design Methods</h2>
-          <p>For this project I used these design strategies. You can explore the artifacts below, or keep scrolling to see how I used those methods to develop
-          the journal entry and graphing features.</p>
+          <p>Want to dig deeper? You can explore the documentation from various stages of this project</p>
         </div>
-        <div class="container-half">
+        <div class="container-half sm">
           <div class="half-lg-element">
             <a href="#">
-            <img src="images/moodscape/user-flows.png" alt="" class="image-responsive shadow clip-circle"></a>
-            <h3>User Flows</h3>
-            <h5>see more</h5>
-          </div>
-          <div class="half-lg-element">
-            <a href="#">
-            <img src="images/moodscape/sketches.png" alt="" class="image-responsive"></a>
-            <h3>Skteches</h3>
+            <img src="images/moodscape/user-flows.png" alt="" class="image-responsive"></a>
+            <h3>User Flows and Sketches</h3>
             <h5>see more</h5>
           </div>
           <div class="half-lg-element">
@@ -428,23 +505,16 @@
             <h3>Remote Testing</h3>
             <h5>see more</h5>
           </div>
-        </div>
-        <div class="container-sm">
-          <h2>Building the Mood Selector</h2>
-        </div>
-        <div class="app-feature">
-          <!-- This is where the carousel feature goes -->
-        </div>
-
-        <div class="container-sm">
-          <h2>Graphics and Analytics</h2>
-        </div>
-        <div class="app-feature">
-          <!-- This is where the carousel feature goes -->
+          <div class="half-lg-element">
+            <a href="#">
+            <img src="images/moodscape/journal.png" alt="" class="image-responsive"></a>
+            <h3>Design Journal</h3>
+            <h5>see more</h5>
+          </div>
         </div>
         <div class="btn-wrapper">
           <div class="btn btn-dark">
-            <a href="#" target="_blank">Explore the Prototype</a>
+            <a href="#" target="_blank">Play with the Prototype</a>
           </div>
         </div>
       </section>
@@ -454,10 +524,32 @@
           <h2>What I learned</h2>
         </div>
         <div class="container-sm">
+          <p>This project walks the line between the very human side of mental health and the very computer side of data collection.
+            On one side, I learned how difficult it can be to get a perspective on your own mental state and that the barriers are mostly our own.
+            On the other hand, I learned how to ask for data in a way that makes it useful in a visualization.</p>
           <h2>Next Steps</h2>
-          <p>all the things</p>
-          <h2>What I learned</h2>
-          <p>The rest of the things</p>
+          <p>Because of the limited time-frame and a team of one, I didn't get to work on everything I wanted to do.
+              I've been considering which features I would work on next to make a better experience:</p>
+          <ul>
+            <h3>Layout for Export</h3>
+            <li><p>An easy to read layout or even an interactive interface for the
+              person who is receiving the exported data. Allowing the user to filter
+              which types of data they want to export or to set some as private would help
+              them feel more in control of sharing personal information.</p> </li>
+              <h3>Tone of Voice</h3>
+              <li><p>Working out the language for notification messages and goal
+                tracking is essential for recognizing the humanity of my users.
+                Guilt was a major barrier to self-care that came up repeatedly in my interviews.
+                The language should feel non-judgmental and encouraging without feeling
+                overly enthusiastic or insincere. If there is one thing I wish I had focused on more closely, it was this.</p></li>
+              <h3>Tracking Medications</h3>
+              <li><p>Medications are a type of hybrid data that deserve a slightly
+                more nuanced tracking feature. They are both a yes/no data point and a ranged data point. </p></li>
+              <h3>Setting Goals</h3>
+              <li><p>My users wanted to be able to set and track goals or target ranges
+                for behaviors. More nuanced goal tracking would go hand in
+                hand with the tone of voice and also make the data visualizations more complex.</p></li>
+          </ul>
         </div>
       </section>
 <!-- footer  -->
@@ -505,4 +597,8 @@
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <script>
+    new Glide('.glide').mount()
+  </script>
 </html>

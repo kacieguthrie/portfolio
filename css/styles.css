@@ -570,10 +570,16 @@ ul.bullet li p{
   max-width: 100%;
 }
 
+.container-half.sm {
+  grid-template-columns: repeat(auto-fit, 15rem);
+  grid-gap: 2rem;
+}
+
 .half-lg-element {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -887,12 +893,6 @@ ul.bullet li p{
 
 /* moodscape mobile*/
 
-.app-feature {
-  width: 100vw;
-  height: 40rem;
-  background-color: var(--color-light);
-}
-
 .hero-background.moodscape {
   background:
     url(../images/moodscape/hero-bkg-safari.png)
@@ -956,10 +956,66 @@ ul.bullet li p{
   display: flex;
   justify-content: space-around;
   text-align: left;
+  flex-wrap: wrap;
 }
 
 .clip-circle {
   clip-path: circle(100px at center);
+}
+
+.app-features-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 20px;
+}
+
+.app-features {
+  display: flex;
+  overflow-x: scroll;
+    margin: 4rem 0;
+}
+
+.app-feature {
+  height: auto;
+  min-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--color-light);
+  align-items: flex-start;
+}
+
+.app-feature.title-card {
+  min-width: 30vw;
+  display: flex;
+  align-items: flex-end;
+  border-right: solid #fff 10px;
+}
+
+/* .app-feature.title-card > * {
+  align-self: center;
+  text-align: center;
+} */
+
+.app-feature-text {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-feature-text.quote {
+    border-radius: 40px 40px 40px 0;
+    background-color: #fff;
+    padding: 3rem;
+    margin-bottom: 2rem;
+}
+
+.app-feature-text > * {
+  max-height: 450px;
+}
+
+.col-center {
+  text-align: center;
 }
 
  /* Tablet  */
@@ -1425,5 +1481,10 @@ ul.bullet li p{
 
   .about-intro {
     padding-left: 7.6rem;
+  }
+
+
+  .app-feature {
+    min-width: 60vw;
   }
 }
