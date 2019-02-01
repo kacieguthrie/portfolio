@@ -1019,6 +1019,10 @@ ul.bullet li p{
   text-align: center;
 }
 
+.center {
+  justify-content: center;
+}
+
  /* Tablet  */
  @media only screen and (min-width: 480px) and (max-width: 900px) {
    h1  {
