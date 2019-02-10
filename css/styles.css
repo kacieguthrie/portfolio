@@ -1095,11 +1095,12 @@ ul.bullet li p{
           clip-path: circle(100px at center);
 }
 
-.app-features-wrapper {
+.app-features-wrap {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px;
   grid-template-columns: 1fr 20px;
+  margin: 20px;
 }
 
 .app-features {
@@ -1120,11 +1121,12 @@ ul.bullet li p{
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 6rem;
   background-color: var(--color-light);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  border: solid #FFF 5px;
 }
 
 .app-feature.title-card {
@@ -1136,6 +1138,13 @@ ul.bullet li p{
       -ms-flex-align: end;
           align-items: flex-end;
   border-right: solid #fff 10px;
+  border-radius: 20px 0 0 20px;
+}
+
+.app-feature.end-card {
+  border-radius: 0 20px 20px 0;
+  min-width: 30vw;
+  padding: 10px;
 }
 
 /* .app-feature.title-card > * {
