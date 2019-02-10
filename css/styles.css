@@ -105,20 +105,21 @@ strong {
 
 /* mobile buttons */
 .btn-wrapper {
-  height: 9rem;
   text-align: center;
-  padding: 2.9rem;
+  padding: 5rem 0 6rem 0;
   position: relative;
   z-index: 3;
 }
 
 .btn {
   border: black solid 1px;
+  border-radius: 3px;
   display: inline-block;
   letter-spacing: .6px;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
+  transition: box-shadow .2s,transform .2s,-webkit-box-shadow .2s,-webkit-transform .2s;
   padding: 1rem 1.6rem 1rem 1.6rem;
 }
 
@@ -130,22 +131,46 @@ strong {
 .btn-dark {
   border: var(--color-dark) solid 1px;
   color: var(--color-dark);
+
 }
 
-.btn-dark:hover{
-  /* -webkit-box-shadow: .4px .4px 4px 1px rgba(170,170,170,.3);
-          box-shadow: .4px .4px 4px 1px rgba(170,170,170,.3); */
-  background-color: var(--color-blue);
-  color: #C9EBF9;
+.btn-dark:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 0 var(--color-dark);
 }
 
 .btn-light {
   border: #fff solid 1px;
   color: #fff;
+  transition: box-shadow .2s,transform .2s,-webkit-box-shadow .2s,-webkit-transform .2s;
 }
 
 .btn-light:hover {
-  background-color: rgba(242,242,242,.1);
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 0 #fff;
+}
+
+
+.btn-contact {
+  border: var(--color-light) solid 1px;
+  color: var(--color-light);
+
+}
+
+.btn-contact:hover{
+  /* -webkit-box-shadow: .4px .4px 4px 1px rgba(170,170,170,.3);
+          box-shadow: .4px .4px 4px 1px rgba(170,170,170,.3); */
+  /* background-color: var(--color-blue);
+  color: #C9EBF9; */
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 0 #FFF;
+}
+
+.btn-contact a {
+  font-family: "Numans", sans-serif;
+  font-size: 2.6rem;
+  text-transform: none;
+
 }
 
 /* Mobile Nav Bar */
@@ -373,18 +398,15 @@ h2.home-special {
   padding: 16px;
 }
 
-.projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100vw;
 
-  /* border: blue solid 2px; */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.projects .primary-project {
+  grid-column: 1 / 3;
 }
 
 .projects .zeehive {
@@ -441,8 +463,26 @@ h2.home-special {
     rgba(218,170,26,.7);
 }
 
+.projects .moodscape {
+  background:
+    linear-gradient(rgba(92,87,174, .3), rgba(92,87,174, .3)),
+    url(../images/moodscape/pastel-mountain-range.jpg)
+    center / cover
+    no-repeat
+    rgba(92,87,174, .7);
+}
+
+.projects .black-rabbit{
+  background:
+    linear-gradient(rgba(84, 35, 8, .7), rgba(84, 35, 8, .7)),
+    url(../images/black-rabbit/moss-bag.jpg)
+    center / cover
+    no-repeat
+    rgba(84, 35, 8, 1);
+}
+
 .secondary-project {
-  /* border: red solid 2px; */
+
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -472,14 +512,14 @@ h2.home-special {
   /* border: green solid 2px; */
 }
 
-.more-projects {
+/* .more-projects {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 5rem;
-  text-align: center;
+  text-align: center; */
 }
 
 /* End home page */
@@ -527,6 +567,7 @@ ul.bullet li p{
       -ms-flex-pack: center;
           justify-content: center;
 
+
 }
 
 .container-sm {
@@ -568,15 +609,19 @@ ul.bullet li p{
   max-width: 100%;
 }
 
-.container-half.sm {
-  grid-template-columns: repeat(auto-fit, 15rem);
-  grid-gap: 2rem;
+.thumb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
+  justify-content: center;
+  grid-row-gap: 2rem;
 }
 
-.half-lg-element {
+.thumb-grid-el {
+  /* border: solid blue 2px; */
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* max-width: 100%; */
   text-align: center;
   margin: 0 auto;
 }
@@ -758,6 +803,10 @@ ul.bullet li p{
   opacity: 1;
   z-index: 10;
 }
+
+
+
+
 
 .dark-hover:hover {
   background-color: rgba(201,235,249,.9);
@@ -1021,6 +1070,18 @@ ul.bullet li p{
   justify-content: center;
 }
 
+/* black rabbit bags */
+
+.hero-background.black-rabbit {
+  /* background-color: #542308; */
+  height: 30vh;
+}
+
+.hero-background.black-rabbit > * {
+  padding: 20px;
+}
+
+
  /* Tablet  */
  @media only screen and (min-width: 480px) and (max-width: 900px) {
    h1  {
@@ -1274,6 +1335,10 @@ ul.bullet li p{
     font-size: 1.4rem;
   }
 
+  .btn-contact a {
+    font-size: 2.6rem;
+  }
+
   /* full screen nav bar */
   .wrapper {
     top: 85px;
@@ -1454,6 +1519,19 @@ ul.bullet li p{
     height: 370px;
   }
 
+  .projects-wrapper {
+    padding: 20px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .primary-project {
+    margin-bottom: 20px;
+  }
+
   .secondary-project {
     min-width: 400px;
   }
@@ -1461,6 +1539,92 @@ ul.bullet li p{
   h2.home-special {
     line-height: 1.4;
     font-size: 2rem;
+  }
+
+  .projects .zeehive {
+    background: rgba(218,170,26,1);
+    transition: all 1s ease-in-out;
+  }
+
+  .projects .zeehive:hover {
+    background:
+      -webkit-linear-gradient(rgba(218,170,26,.7), rgba(218,170,26,.7)),
+      url(../images/home/zeehive-cover.png)
+      center / cover
+      no-repeat
+      rgba(218,170,26,.7);
+    background:
+      -o-linear-gradient(rgba(218,170,26,.7), rgba(218,170,26,.7)),
+      url(../images/home/zeehive-cover.png)
+      center / cover
+      no-repeat
+      rgba(218,170,26,.7);
+    background:
+      linear-gradient(rgba(218,170,26,.7), rgba(218,170,26,.7)),
+      url(../images/home/zeehive-cover.png)
+      center / cover
+      no-repeat
+      rgba(218,170,26,.7);
+  }
+
+  .projects .pt-woodschool {
+    background: var(--color-blue);
+    transition: all 1s ease-in-out;
+  }
+
+  .projects .pt-woodschool:hover {
+    background:
+      -webkit-gradient(linear, left top, left bottom, from(rgba(78,136,162,.7)), to(rgba(78,136,162,.7))),
+      url(../images/home/pt-woodschool-cover.png)
+      center / cover
+      no-repeat
+      rgba(78,136,162,.7);
+    background:
+      -webkit-linear-gradient(rgba(78,136,162,.7), rgba(78,136,162,.7)),
+      url(../images/home/pt-woodschool-cover.png)
+      center / cover
+      no-repeat
+      rgba(78,136,162,.7);
+    background:
+      -o-linear-gradient(rgba(78,136,162,.7), rgba(78,136,162,.7)),
+      url(../images/home/pt-woodschool-cover.png)
+      center / cover
+      no-repeat
+      rgba(78,136,162,.7);
+    background:
+      linear-gradient(rgba(78,136,162,.7), rgba(78,136,162,.7)),
+      url(../images/home/pt-woodschool-cover.png)
+      center / cover
+      no-repeat
+      rgba(78,136,162,.7);
+  }
+
+  .projects .moodscape {
+    background: rgba(92,87,174, .7);
+    transition: all 1s ease-in-out;
+  }
+
+  .projects .moodscape:hover {
+    background:
+      linear-gradient(rgba(92,87,174, .3), rgba(92,87,174, .3)),
+      url(../images/moodscape/pastel-mountain-range.jpg)
+      center / cover
+      no-repeat
+      rgba(92,87,174, .7);
+  }
+
+  .projects .black-rabbit{
+    background: rgba(84, 35, 8, 1);
+    transition: all 1s ease-in-out;
+  }
+
+  .projects .black-rabbit:hover {
+    background:
+      linear-gradient(rgba(84, 35, 8, .7), rgba(84, 35, 8, .7)),
+      url(../images/black-rabbit/moss-bag.jpg)
+      center / cover
+      no-repeat
+      rgba(84, 35, 8, 1);
   }
 
   /* about */
