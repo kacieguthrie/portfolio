@@ -14,7 +14,8 @@
     <title>About Me</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100i,300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Numans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
@@ -22,14 +23,12 @@
   <body>
     <nav>
       <a href="index.html" class="logo">
-        <img src="images/global/logo-mobile.png" class="mobile">
-        <img src="images/global/logo-rectangle-small.png" class="fullscreen">
-        <span class="fullscreen text">Kacie <br>Guthrie</span>
+        <h3 class="fullscreen text">Kacie Guthrie</h3>
       </a>
 
       <ul class="nav-links">
         <li>
-          <a href= "index.html#recent-work">work</a>
+          <!-- <a href= "index.html#recent-work">work</a> -->
         </li>
         <li>
           <a href= "about.html">about</a>
@@ -45,11 +44,13 @@
     <div class="wrapper">
       <div class="container-sm about-intro">
         <h1>About</h1>
-        <h3>I'm a designer transitioning to digital media with a growing infatuation with front-end development.
-          I'm inspired to create positive experiences in healthcare and mission-based organizations.</h3>
-        <h4>Be useful, be curious, try everything.</h4>
+        <p>I'm a designer transitioning to digital media with a growing infatuation with front-end development.
+          I'm inspired to create positive experiences in healthcare and mission-based organizations.</p>
+
       </div>
-      <img src="images/about/headshot.png" alt="Kacie smiling in a garden" class="image-responsive headshot">
+      <!-- <div class="container-sm">
+        <img src="images/about/headshot.png" alt="Kacie smiling in a garden" class="image-responsive about-intro">
+      </div> -->
     <section class="about-text">
       <div class="about-content container-lg">
 
@@ -120,16 +121,26 @@
       </div>
     </section>
     <section>
-      <div class="container-sm about-outro">
-        <h4>Want to team up? Let's chat about UX!</h4>
-        <p>...or perhaps one of my other favorite subjects: Sunday NYT crossword themes,
-          podcasts I haven't heard yet, or concepts for RPG characters.</p>
+      <div class="container-sm">
+        <div class="about-outro">
+          <img src="images/about/headshot-duck.jpg" alt="" class="image-responsive clip-circle" style="max-width:300px;">
+          <div class="persona">
+            <h4>Want to team up? Let's chat about UX!</h4>
+            <p>...or perhaps one of my other favorite subjects: Sunday NYT crossword themes,
+              podcasts I haven't heard yet, or concepts for RPG characters.</p>
+          </div>
+
+        </div>
       </div>
     </section>
     <section class="contact" id="contact">
       <div class="contact-text">
         <p>Currently available for design projects</p>
-        <h1>Let's Connect</h1>
+        <div class="btn-wrapper">
+          <div class="btn btn-contact">
+            <a href="mailto:kacieguthrie@gmail.com">Let's Connect</a>
+          </div>
+        </div>
         <div class="social-link-container">
           <a href="https://github.com/kacieguthrie" alt="Github" target="_blank" class="social-link">
             <img src="images/global/git-hub.png" alt="">
@@ -147,6 +158,7 @@
             <p>kacieguthrie@gmail.com</p>
           </a>
         </div>
+
       </div>
     </section>
     <div class="footer-rainbow"></div>
