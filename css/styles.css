@@ -254,7 +254,7 @@ nav {
   grid-template-columns: repeat(auto-fit, 30rem);
   grid-gap: 3rem;
   justify-content: center;
-  align-items: start;
+  /* align-items: start; */
 }
 
 .container-half > * {
@@ -794,6 +794,29 @@ ul.bullet li p{
 .nav-logo h6  {
   padding: 0 10px;
   margin-top: 7px;
+}
+
+.active {
+
+}
+
+.active:before{
+  content: '<';
+  font-family: 'Permanent Marker', sans-serif;
+  color: var(--color-primary);
+  margin-right: 4px;
+  font-size: 3rem;
+  line-height: 10%;
+}
+
+.active:after{
+  content: '>';
+  font-family: 'Permanent Marker', sans-serif;
+  color: var(--color-primary);
+  margin-left: 4px;
+  margin-top: 5px;
+  font-size: 3rem;
+  line-height: 10%;
 }
 
 /* desktop home  */
