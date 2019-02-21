@@ -29,6 +29,42 @@ html, body {
 
 /* _____________________________________________________________________________Mobile Styles */
 
+
+.slider-card {
+  height: 70vh;
+  background-color: var(--color-white);
+  margin: 2px;
+
+}
+
+/* slider buttons */
+.tns-controls {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tns-controls [aria-controls] {
+  background-color: var(--color-white);
+  border: black solid 1px;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 2rem;
+  font-family: 'Roboto Mono', sans-serif;
+  letter-spacing: .6px;
+  text-align: center;
+  text-transform: lowercase;
+  transition: box-shadow .2s,transform .2s,-webkit-box-shadow .2s,-webkit-transform .2s;
+  padding: .5rem 4rem;
+}
+
+.tns-controls > *:first-child {
+  margin-right: 4rem;
+}
+
+.tns-controls [aria-controls]:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 0 var(--color-primary);
+}
 /* _________________________________________________________Mobile Typography */
 
 h1  {
@@ -218,6 +254,7 @@ nav {
   grid-template-columns: repeat(auto-fit, 30rem);
   grid-gap: 3rem;
   justify-content: center;
+  align-items: start;
 }
 
 .container-half > * {
@@ -253,6 +290,10 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.flex-row > * {
+  flex: 1;
 }
 
 .center-group-sm {
@@ -320,19 +361,20 @@ nav {
 
 .icon-flex-wrap {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .icon-text {
   margin-bottom: 2rem;
+  margin-left: 30px;
+  flex: 10;
+  min-width: 300px;
 }
 
 .about-icon {
-  align-self: flex-start;
-  width: 40px;
-  margin: 0 30px 0 30px;
   padding-bottom: 30px;
+  margin: 0 auto;
 }
 
 
@@ -372,6 +414,10 @@ nav {
   box-shadow: var(--shadow-gray);
   border: solid var(--color-dark) 1px;
   border-radius: 3px;
+}
+
+.pop {
+  box-shadow: var(--shadow-primary);
 }
 
 .clip-circle {
@@ -418,6 +464,7 @@ nav {
   padding: 5rem 0;
   margin: 10rem 0 5rem 0;
   text-align: center;
+  z-index: 999;
 }
 
 .social-link-container {
@@ -542,6 +589,11 @@ nav {
   padding: 20px 0;
 }
 
+/* _______________________________________________________Mobile About */
+
+.about-hero {
+  padding-top: 60px;
+}
 
 /* _______________________________________________________Mobile Case Studies */
 .section-header {
@@ -718,7 +770,17 @@ ul.bullet li p{
   .btn-primary:hover {
     transform: translate(-3px, -3px);
     box-shadow: 3px 3px 0 var(--color-primary);
-}
+  }
+
+  .btn-dark:active {
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px 0 var(--color-dark);
+  }
+
+  .btn-primary:active {
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px 0 var(--color-primary);
+  }
 
 /* Desktop nav */
 .nav-logo {
@@ -769,6 +831,6 @@ ul.bullet li p{
   transform: translateX(-50px);
 }
 
-.icon-text {
+/* .icon-text {
   flex: 1;
-}
+} */
