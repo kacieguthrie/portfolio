@@ -5,7 +5,7 @@
 
 html, body {
   font-size: 10px;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Inconsolata', monospace;
   scroll-behavior: smooth;
   background-color: var(--color-light);
 }
@@ -29,12 +29,30 @@ html, body {
 
 /* _____________________________________________________________________________Mobile Styles */
 
-
 .slider-card {
-  height: 70vh;
-  background-color: var(--color-white);
-  margin: 2px;
+  padding: 3rem;
+  /* background-color: #fff; */
 
+}
+
+@media only screen and (min-width: 900px) {
+  .slider-card {
+    padding: 5rem;
+  }
+}
+
+.slider-card img {
+  max-height: 45vh;
+}
+
+.slider-card video {
+  max-height: 45vh;
+}
+
+.tns-item {
+  height: 70vh;
+  /* background-color: var(--color-light); */
+  border-right: solid black 1px;
 }
 
 /* slider buttons */
@@ -54,6 +72,7 @@ html, body {
   text-align: center;
   text-transform: lowercase;
   transition: box-shadow .2s,transform .2s,-webkit-box-shadow .2s,-webkit-transform .2s;
+  outline: none;
   padding: .5rem 4rem;
 }
 
@@ -68,9 +87,9 @@ html, body {
 /* _________________________________________________________Mobile Typography */
 
 h1  {
-  font-size: 2rem;
+  font-size: 2.6rem;
   margin-bottom: 2rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Inconsolata", monospace;
   line-height: normal;
 }
 
@@ -207,28 +226,23 @@ nav {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
+  padding-right: 5rem;
 }
 
 .nav-logo h1 {
-  display: none;
+  font-size: 3.2rem;
 }
 
 .nav-logo h6  {
-  margin-top: 6px;
-  padding: 0 10px;
+  line-height: 80%;
   font-size: 3rem;
 }
 
 .nav-links li {
   font-size: 1.2rem;
-  padding-left: 2.5rem;
+  padding-left: .5rem;
   font-family: 'Roboto Mono', sans-serif;
 }
-
-/* .nav-links a:hover {
-  color: var(--color-primary);
-  transition: 300ms;
-} */
 
 /* _________________________________________________________Mobile Containers */
 
@@ -467,6 +481,10 @@ nav {
   z-index: 999;
 }
 
+.contact h5 {
+  padding-bottom: 2rem;
+}
+
 .social-link-container {
   color: var(--color-primary);
   display: flex;
@@ -514,20 +532,23 @@ nav {
   animation-name: fadein;
 }
 
-.home-hero h2 {
+.home-hero h1 {
   text-transform: none;
-  font-size: 2rem;
+  font-size: 2.8rem;
+  line-height: 130%;
   z-index: 3;
 }
 
 .home-hero span {
-  font-family: "Nunito",sans-serif;
+  /* font-family: "Nunito",sans-serif; */
   color: var(--color-primary);
-  font-size: 3rem;
+  font-size: 3.4rem;
+  /* letter-spacing: 2px; */
 }
 
 .home-hero .hero-stroke {
-  justify-self: end;
+  justify-self: center;
+  padding-top: 3rem;
 }
 
 .deco {
@@ -713,12 +734,12 @@ ul.bullet li p{
   }
 
   h1  {
-    font-size: 2.6rem;
+    font-size: 3.6rem;
     margin-bottom: 2rem;
   }
 
   h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: 400;
     line-height: 1.4;
     margin-bottom: 1.2rem;
@@ -726,7 +747,7 @@ ul.bullet li p{
   }
 
   h3 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: 1.3;
     margin-bottom: 1.2rem;
   }
@@ -796,30 +817,46 @@ ul.bullet li p{
   margin-top: 7px;
 }
 
-.active {
-
+.nav-links li {
+  font-size: 1.6rem;
+  padding-left: 6rem;
 }
 
 .active:before{
   content: '<';
   font-family: 'Permanent Marker', sans-serif;
   color: var(--color-primary);
-  margin-right: 4px;
+  margin: 3px 0 0 -25px;
   font-size: 3rem;
   line-height: 10%;
+  position: absolute;
 }
 
 .active:after{
   content: '>';
   font-family: 'Permanent Marker', sans-serif;
   color: var(--color-primary);
-  margin-left: 4px;
-  margin-top: 5px;
+  margin: 3px 0 0 8px;
   font-size: 3rem;
   line-height: 10%;
+  position: absolute;
 }
 
-/* desktop home  */
+/* ________________________desktop home  */
+.side-heading {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  transform: rotate(270deg);
+	transform-origin: left top;
+  margin: 200px 0 0 70px;
+}
+
+.side-heading > *:nth-child(2) {
+  text-decoration: underline;
+  padding-left: 1rem;
+}
+
 
 /* desktop hero */
 .deco {

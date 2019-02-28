@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100i,300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400|Quicksand:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
@@ -421,8 +422,6 @@
                 <h4>Barriers to journaling: "Takes too much time", "Don't know what to say"</h4>
                 <h4>Most people identify their moods more with a face than a word</h4>
               </div>
-            </div>
-            <div class="slider-card">
               <h1>Strategy</h1>
               <div class="app-feature-text">
                 <ul class=>
@@ -495,16 +494,15 @@
         <script>
           var slider = tns({
             container: '.my-slider',
-            items: 2,
+            items: 1,
             center: true,
-            // autoWidth: true,
             autoHeight: true,
             loop: false,
             controlsText: ["<",">"],
-            gutter: 20,
             nav: false,
             speed: 500,
-
+            edgePadding: 50,
+            gutter: 0,
           });
           </script>
 
