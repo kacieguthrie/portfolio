@@ -24,32 +24,37 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   </head>
   <body>
-    <nav>
-      <a href="index-2.html" class="nav-logo" alt="kacie guthrie">
-        <h1>kacie</h1><h6>||</h6><h1>guthrie</h1>
-      </a>
-      <ul class="nav-links">
-        <li>
-          <a class="active" href= "index-2.html#recent-work">work</a>
-        </li>
-        <li>
-          <a href= "about.html">about</a>
-        </li>
-        <li>
-          <a href= "contact.html">contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="nav-wrap">
+      <nav>
+        <a href="index-2.html" class="nav-logo">
+          <h1>kacie</h1><h6>||</h6><h1>guthrie</h1>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href= "index-2.html#recent-work" class="active">work</a>
+          </li>
+          <li>
+            <a href= "about.html">about</a>
+          </li>
+          <li>
+            <a href= "contact.html">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="wrapper">
       <!-- Main Body Content -->
 
       <section class="hero-wrap">
         <div class="home-hero">
-          <div class="deco"><!-- triangle element --></div>
+          <div class="deco">
+            <img src="images/home/deco.svg" alt="" class="mobile-hide">
+          </div>
           <div class="container-sm">
-            <h1>Hi! I'm <span>kacie</span>, a UX designer and multimedia craftsperson based in Washington State.</h1>
+            <h1>Hi! I'm kacie, a <span>UX designer</span> and multimedia craftsperson based in Washington State.</h1>
             <h1>I build useful things for real people.</h1>
-            <img src="images/home/stroke.svg" alt="" class="hero-stroke">
+
           </div>
         </div>
         <div id="recent-work"></div>
@@ -60,8 +65,10 @@
       <!-- Projects -->
       <section>
         <div class=" container-half">
-      <div class="side-heading">    <h6>*</h6>
-          <h3 class="">recent work</h3></div>
+          <div class="side-heading">
+            <h6>*</h6>
+            <h3 class="">recent work</h3>
+          </div>
         </div>
         <div class="projects">
           <div class="project container-half">

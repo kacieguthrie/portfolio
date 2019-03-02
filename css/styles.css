@@ -66,6 +66,10 @@ html, body {
 }
 /* _________________________________________________________Mobile Typography */
 
+.mobile-hide {
+  display: none;
+}
+
 h1  {
   font-size: 2.6rem;
   margin-bottom: 2rem;
@@ -74,7 +78,7 @@ h1  {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
   letter-spacing: .9px;
   line-height: 1.4;
@@ -89,10 +93,10 @@ h2::first-line {
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
   letter-spacing: .2px;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 2rem;
   color: var(--color-dark);
 }
@@ -119,7 +123,7 @@ h5 {
 h6  {
   font-family: 'Permanent Marker', cursive;
   color: var(--color-primary);
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   margin-bottom: 1rem;
 }
@@ -188,19 +192,29 @@ li p {
   padding-bottom: 2rem;
 }
 
-nav {
+.nav-wrap{
+
+}
+
+.nav-wrap {
   background-color: var(--color-light);
   border-bottom: solid var(--color-dark) 1px;
   box-shadow: var(--shadow-top);
-  display: flex;
-  flex-wrap: wrap;
+
   font-size: 1.1rem;
   height: 60px;
-  justify-content: space-between;
+  width: 100vw;
   padding: .8rem 1.6rem .8rem 1.6rem;
   position: fixed;
-  width: 100vw;
   z-index: 999;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .nav-links {
@@ -210,7 +224,6 @@ nav {
 }
 
 .nav-links > *:last-child {
-
 }
 
 .nav-logo {
@@ -244,11 +257,12 @@ nav {
   content: '.';
   font-family: 'Permanent Marker', sans-serif;
   color: var(--color-primary);
-  margin: -4px 0 0px -7px;
-  font-size: 2.5rem;
+  margin: -5px 0 0px -10px;
+  font-size: 3.5rem;
   line-height: 10%;
   position: absolute;
 }
+
 
 /* _________________________________________________________Mobile Containers */
 
@@ -575,26 +589,20 @@ footer {
 }
 
 .home-hero span {
-  /* font-family: "Nunito",sans-serif; */
   color: var(--color-primary);
+  font-family: "Permanent Marker";
+  letter-spacing: 3px;
   font-size: 3.4rem;
-  /* letter-spacing: 2px; */
-}
+  background: var(--color-light);
 
-.home-hero .hero-stroke {
-  justify-self: center;
-  padding-top: 3rem;
 }
 
 .deco {
   animation-duration: 1.5s;
   animation-name: slidein;
-  background-color: var(--color-primary);
-  clip-path: polygon(0 0, 40% 74%, 0 100%);
-  height: 700px;
-  width: 300px;
   position: absolute;
-  margin-top: -50px;
+  padding-top: 200px;
+  margin-left: -4px;
 }
 
 .side-heading {
@@ -659,6 +667,29 @@ footer {
 
 .about-hero {
   padding-top: 60px;
+}
+
+.arrow-box-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.arrow-box {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+  width: 30rem;
+}
+
+.arrow-box h6 {
+  font-size: 2rem;
+}
+
+.arrow-box img {
+  padding-right: 1rem;
 }
 
 /* _______________________________________________________Mobile Case Studies */
@@ -770,12 +801,79 @@ ul.bullet li p{
 }
 
 
+/* _________________________________________Contact Form */
+.contact-form {
+  padding: 60px 1rem 0 1rem;
+  background-color: transparent;
+}
 
+.contact-form form {
+  /* background-color: var(--color-primary); */
+  border-radius: 4px;
+}
+
+.deco-2 {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  position: absolute;
+  z-index: 0;
+}
+
+.contact-input {
+  color: var(--color-dark);
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: var(--color-light);
+  border:1px solid var(--color-dark);
+  transition: all 0.3s;
+  padding: 10px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.contact-input:focus {
+  background: var(--color-white);
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 0 var(--color-dark);
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: "Inconsolata", sans-serif;
+  width: 100%;
+  background: var(--color-white);
+  border-radius:5px;
+  border:1px solid var(--color-dark);
+  cursor:pointer;
+  color: var(--color-dark);
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+}
+
+.say-hi {
+  text-align: left;
+}
 
 /* _____________________________________________________________________________Desktop styles */
 @media only screen and (min-width: 900px) {
   body {
     /* background-color: thistle; */
+  }
+
+  .mobile-hide {
+    display: inline-block;
   }
 
   h1  {
@@ -805,6 +903,10 @@ ul.bullet li p{
 
   h5 {
     font-size: 1.2rem;
+  }
+
+  h6 {
+    font-size: 4rem;
   }
 
   p {
@@ -888,10 +990,8 @@ ul.bullet li p{
 
 /* ________________________desktop home  */
 .side-heading {
-  position: absolute;
-  transform: rotate(270deg);
+  transform: rotate(270deg) translate(-260px, -240px);
 	transform-origin: left top;
-  margin: 200px 0 0 70px;
 }
 
 .side-heading > *:nth-child(2) {

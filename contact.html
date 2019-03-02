@@ -24,38 +24,39 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   </head>
   <body>
-    <nav>
-      <a href="index-2.html" class="nav-logo" alt="kacie guthrie">
-        <h1>kacie</h1><h6>||</h6><h1>guthrie</h1>
-      </a>
-      <ul class="nav-links">
-        <li>
-          <a href= "index-2.html#recent-work">work</a>
-        </li>
-        <li>
-          <a href= "about.html">about</a>
-        </li>
-        <li>
-          <a class="active" href= "/contact.html">contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="nav-wrap">
+      <nav>
+        <a href="index-2.html" class="nav-logo">
+          <h1>kacie</h1><h6>||</h6><h1>guthrie</h1>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href= "index-2.html#recent-work">work</a>
+          </li>
+          <li>
+            <a href= "about.html">about</a>
+          </li>
+          <li>
+            <a href= "contact.html" class="active">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="wrapper">
       <section class="contact-form">
-        <div class="deco">
-
-        </div>
-        <div class="container-half-lg">
+        <div class="container-half-lg" style="align-items: start;">
           <form action="https://formspree.io/kacieguthrie@gmail.com" method="POST">
             <input type="text" name="name" placeholder="Name" class="contact-input">
             <input type="email" name="_replyto" placeholder="Email" class="contact-input">
+            <h6 style="text-align: center;">* * *</h6>
             <textarea type="text" name="message" placeholder="Message" class="contact-input"></textarea>
-            <input type="submit" value=">> send >>" class="btn-primary">
+            <input type="submit" value=" send >>" class="btn-primary">
           </form>
           <div class="say-hi call-out call-out-lg">
             <h1>Say hi!</h1>
             <p>I'm currently available for remote or local opportunities for UX and web design in the Bellingham, WA area.</p>
-            <div class="social-link-container">
+            <div class="social-link-container" style="margin: 0;">
               <a href="https://github.com/kacieguthrie" alt="Github" target="_blank" class="social-link">
                 <i class="fab fa-github fa-3x"></i>
               </a>
@@ -63,18 +64,16 @@
                 <i class="fab fa-linkedin fa-3x"></i>
               </a>
             </div>
-            <div class="email-contact">
-              <a class="email" href="mailto:kacieguthrie@gmail.com">
-                <h3>kacieguthrie@gmail.com</h3>
-              </a>
-            </div>
+            <a class="email" href="mailto:kacieguthrie@gmail.com">
+              <h3>kacieguthrie@gmail.com</h3>
+            </a>
           </div>
 
 
         </div>
       </section>
       <footer>
-        
+
       </footer>
     </div>
   </body>
