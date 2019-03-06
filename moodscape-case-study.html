@@ -27,36 +27,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
   </head>
   <body>
-    <nav>
-      <a href="index-2.html" class="nav-logo">
-        <h1>kacie</h1><h6>||</h6><h1>guthrie</h1>
-      </a>
-      <div class="">
-      </div>
+    <div class="nav-wrap">
+      <nav>
+        <a href="index-2.html" class="nav-logo">
+          <h1>kacie</h1><h6>||</h6><h1>guthrie</h1>
+        </a>
 
-      <ul class="nav-links">
-        <li>
-          <a href= "index-2.html#recent-work">work</a>
-        </li>
-        <li>
-          <a href= "about.html">about</a>
-        </li>
-        <li>
-          <a href= "images/global/kacie-guthrie-resume.pdf">resume</a>
-        </li>
-        <li>
-          <a href= "#contact">contact</a>
-        </li>
-      </ul>
-    </nav>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href= "index-2.html#recent-work">work</a>
+          </li>
+          <li>
+            <a href= "about.html">about</a>
+          </li>
+          <li>
+            <a href= "contact.html">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="wrapper">
-      <section class="hero-background moodscape">
+      <section class="project-hero moodscape">
           <div class="hero-text">
             <img src="images/moodscape/moodscape-logo.png" class="hero-logo moodscape" alt="Moodscape logo">
             <p id="moodscape-logo-text">Moodscape</p>
             <div class="container-sm">
               <h3>Health Journal for gaining insight into how your lifestyle and wellness affects your mood.</h3>
-              <h5>January 2019</h5>
+              <h5>2019</h5>
             </div>
           </div>
           <div class="container-lg">
@@ -150,18 +147,14 @@
             </div>
             <div class="">
               <h6>70%</h6>
-              <p>70% were working with a therapist or MD for mood-related issues</p>
+              <p>were working with a therapist or MD for mood-related issues</p>
+            </div>
+            <div class="">
+              <p>Some of the main barriers to journaling were:</p>
+              <h4>"Lack of time" "don't know what to say" "forgetfulness"<br> "guilt"</h4>
             </div>
           </div>
-          <div class="container-sm">
-            <p>Some of the main barriers to journaling were:</p>
-            <ul>
-              <h4>"Lack of time"</h4>
-              <h4>"Forgetfulness"</h4>
-              <h4>"Don't know what to say"</h4>
-              <h4>"Guilt"</h4>
-            </ul>
-          </div>
+
         </div>
         <div class="container-sm">
           <h3>Interview Insights: Psychologist</h3>
@@ -175,7 +168,7 @@
         </div>
         <div class="container-sm">
           <h3>Interview Insights: Users</h3>
-          <p>This is where I got my best info!</p>
+          <p>From conversations with potential users, I learned:</p>
         </div>
         <div class="container-half">
           <div class="call-out">
@@ -327,7 +320,10 @@
           <p>What approach was I going to use? I wanted to build a tool for communicating,
             organizing, and reflecting on the factors that influence our moods.
             I chose to build a data-centered approach to health management.</p>
-          <h3>Why use a data centered approach?</h3>
+        </div>
+        <div class="highlight">
+          <div class="container-sm">
+            <h3>Why use a data centered approach?</h3>
             <ul class="bullet">
               <li><p>Tracking data helps us learn something we can’t understand
                 intuitively by organizing the information and giving it perspective. </p></li>
@@ -337,6 +333,9 @@
               <li><p>Tracking our metrics on a goal that takes time to see change
                 or results can help us feel more engaged/motivated. </p></li>
             </ul>
+          </div>
+        </div>
+        <div class="container-sm">
             <p>In developing this strategy, I used my design journal practice to think through the research.
               Read more about the questions I asked to define the problem and focus on a strategy:</p>
             <ul class="bullet">
@@ -355,7 +354,7 @@
           <p>User stories were based on my personas and I used my strategy to
             prioritize which stories would be included in the MVP.</p>
           <div class="">
-            <h1 style="color:#E37070; ">"as a user I want to ____ so that I can ______."</h1>
+            <h4>"as a user I want to ____ so that I can ______."</h4>
           </div>
           <div class="btn-wrapper">
             <div class="btn btn-dark">
@@ -401,26 +400,29 @@
       </section>
 <!-- Building The App -->
       <section>
-        <div class="section-header" id="build">
+        <div class="section-header" id="build" style="margin-bottom: 0;">
           <h6>Building the App</h6>
         </div>
-        <!-- Tiny Slider-->
-        <div class="">
-          <div class="container-sm">
-            <h1>1</h1>
-            <i class="fas fa-chevron-right fa-2x"></i>
-            <div class="spacer-lg"></div>
-            <h4>Follow my process</h4>
-            <img src="images/moodscape/idea-board.png" alt="" class="image-responsive">
+        <div class="container-sm highlight">
+          <div class="" style="text-align: center;">
+            <p>Below you can follow the steps I took to build one feature of the app:</p>
+            <h1>Making a Journal Entry</h1>
+
+            <img src="images/moodscape/idea-board.png" alt="" class="">
+            <div class="arrow-box arrow-box-center">
+              <img src="images/about/down-arrow.svg" alt="" style="margin-top: 12px;">
+              <h4>Follow my process</h4>
+            </div>
           </div>
+        </div>
           <div class="container-lg my-slider">
             <div class="slider-card">
               <h1>Research Insights</h1>
               <div class="slider-card-text quote">
                 <h4>"Journaling is hard when you feel bad"</h4>
                 <h4>"Identifying specific feelings can be overwhelming"</h4>
-                <h4>Barriers to journaling: "Takes too much time", "Don't know what to say"</h4>
-                <h4>Most people identify their moods more with a face than a word</h4>
+                <h3>Barriers to journaling: Time consuming, uninspiring</h3>
+                <h3>Most people identify their moods more with a face than a word</h3>
               </div>
             </div>
             <div class="v">
@@ -431,10 +433,10 @@
               <h1>Strategy</h1>
               <div class="app-feature-text">
                 <ul class=>
-                  <li><h4> - Mood selector is basic (limited options to pick from)</h4></li>
-                  <li><h4>- Flexible level of engagement. An entry can be as simple or detailed as the user needs.</h4></li>
-                  <li><h4>- Gathering data: Collecting standardized data that can be used for analytics while also
-                    allowing for unique entries through free writing.</h4></li>
+                  <li><p> - Mood selector is basic (limited options to pick from)</p></li>
+                  <li><p>- Flexible level of engagement. An entry can be as simple or detailed as the user needs.</p></li>
+                  <li><p>- Gathering data: I needed to collect both standardized data that can be used for analytics and also
+                    unique data such as thoughts or free writing.</p></li>
                 </ul>
               </div>
             </div>
@@ -470,9 +472,9 @@
             <div class="slider-card">
               <h1>Preference Testing</h1>
               <div class="app-feature-text">
-                <p>Most people prefered the spectrum wheel, but about half said they
+                <p>For recording a mood, most people prefered the spectrum wheel, but about half said they
                   would like to have more than 5 mood options. Some weren’t sure which
-                  side was happy or sad since I neglected to put labels.</p>
+                  side was happy or sad since they lacked labels.</p>
                 <img src="images/moodscape/pref-test.png" alt="" class="image-responsive">
               </div>
             </div>
@@ -483,8 +485,8 @@
             <div class="slider-card">
               <h1>Refinements</h1>
               <div class="app-feature-text">
-                <p>7 Moods, neutral state, and +/- labeling</p>
-                <video src="images/moodscape/mood-tracker-vid.mp4" autoplay poster="posterimage.jpg" class= "image-responsive" autoplay muted loop></video>
+                <p>Here, I added 7 Moods, a neutral unselected state, and +/- labeling</p>
+                <video src="images/moodscape/mood-tracker-vid.mp4" autoplay poster="posterimage.jpg" class= "image-responsive" autoplay muted loop controls></video>
               </div>
             </div>
             <div class="v">
@@ -507,17 +509,10 @@
               <div class=""></div>
               <div class=""></div>
             </div>
-            <div class="slider-card">
-              <div class="app-feature-text">
-                <div class="btn-wrapper">
-                  <div class="btn btn-dark">
-                    <a href="https://www.figma.com/proto/upbIucPacS1kcMYU1aeLyF/Moodscape-Prototype?node-id=339%3A12584&viewport=350%2C108%2C0.0544898&scaling=scale-down" target="_blank">Play with the Prototype</a>
-                  </div>
-                </div>
-              </div>
+            <div class="btn btn-primary">
+              <a href="https://www.figma.com/proto/upbIucPacS1kcMYU1aeLyF/Moodscape-Prototype?node-id=339%3A12584&viewport=350%2C108%2C0.0544898&scaling=scale-down" target="_blank">Play with the Prototype</a>
             </div>
           </div>
-        </div>
 
 
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
@@ -548,39 +543,39 @@
           <div class="center-group-lg">
             <div class="thumb-grid-el">
               <a href="https://www.figma.com/file/bPHk8xRqU9ZqEh3fSlp1MAzp/Moodscape?node-id=209%3A66" target="_blank">
-              <img src="images/moodscape/user-flows.png" alt="" class="image-responsive"></a>
-              <h3>User Flows and Sketches</h3>
-              <h5>see more</h5>
+                <img src="images/moodscape/user-flows.png" alt="" class="image-responsive grow">
+                <h3>User Flows and Sketches</h3>
+              </a>
             </div>
             <div class="thumb-grid-el">
               <a href="https://www.figma.com/file/bPHk8xRqU9ZqEh3fSlp1MAzp/Moodscape?node-id=53%3A1246" target="_blank">
-              <img src="images/moodscape/wireframes.png" alt="" class="image-responsive"></a>
-              <h3>Wireframes</h3>
-              <h5>see more</h5>
+                <img src="images/moodscape/wireframes.png" alt="" class="image-responsive grow">
+                <h3>Wireframes</h3>
+              </a>
             </div>
             <div class="thumb-grid-el">
               <a href="https://www.figma.com/file/upbIucPacS1kcMYU1aeLyF/Moodscape-Prototype?node-id=339%3A12584" target="_blank" >
-              <img src="images/moodscape/hi-fi-mockup.png" alt="" class="image-responsive"></a>
-              <h3>Hi-fi Mockups</h3>
-              <h5>see more</h5>
+                <img src="images/moodscape/hi-fi-mockup.png" alt="" class="image-responsive grow">
+                <h3>Hi-fi Mockups</h3>
+              </a>
             </div>
             <div class="thumb-grid-el">
               <a href="https://docs.google.com/document/d/1UskIFmpaOlXMSsVxoS7a2NhsVFoXxMJkB8fHyjxYIA4/edit?usp=sharing" target="_blank">
-              <img src="images/moodscape/person-test.png" alt="" class="image-responsive"></a>
-              <h3>In-person Testing</h3>
-              <h5>see more</h5>
+                <img src="images/moodscape/person-test.png" alt="" class="image-responsive grow">
+                <h3>In-person Testing</h3>
+              </a>
             </div>
             <div class="thumb-grid-el">
               <a href="https://docs.google.com/document/d/1UskIFmpaOlXMSsVxoS7a2NhsVFoXxMJkB8fHyjxYIA4/edit?usp=sharing" target="_blank">
-              <img src="images/moodscape/remote-test.png" alt="" class="image-responsive"></a>
-              <h3>Remote Testing</h3>
-              <h5>see more</h5>
+                <img src="images/moodscape/remote-test.png" alt="" class="image-responsive grow">
+                <h3>Remote Testing</h3>
+              </a>
             </div>
             <div class="thumb-grid-el">
               <a href="https://paper.dropbox.com/doc/Design-Journal-Kacie-Guthrie--AWtZktwol~~msZdVj1RG0Vg0AQ-c7FA4C1jw56JQmZqo0n2q" target="_blank">
-              <img src="images/moodscape/journal.png" alt="" class="image-responsive"></a>
-              <h3>Design Journal</h3>
-              <h5>see more</h5>
+                <img src="images/moodscape/journal.png" alt="" class="image-responsive grow">
+                <h3>Design Journal</h3>
+              </a>
             </div>
           </div>
         </div>
@@ -620,6 +615,9 @@
           </ul>
         </div>
       </section>
+      <div class="spacer">
+
+      </div>
 <!-- footer  -->
 <div class=" container-sm">
   <a href="zeehive-case-study.html" class="center-group-sm">
@@ -628,33 +626,30 @@
   </a>
 </div>
 <section class="contact" id="contact">
-  <div class="contact-text">
-    <h1>Currently available for design projects</h1>
-    <div class="btn btn-primary">
+  <h5>Currently available for design projects</h5>
+  <div class="btn btn-primary">
 
-      <a href="mailto:kacieguthrie@gmail.com"><i class="far fa-envelope fa-1x"></i>Let's Connect</a>
-    </div>
+    <a href="contact.html"><i class="far fa-envelope fa-1x"></i>Let's Connect</a>
+  </div>
 
-    <div class="social-link-container">
-      <a href="https://github.com/kacieguthrie" alt="Github" target="_blank" class="social-link">
-        <i class="fab fa-github fa-3x"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/kacie-guthrie-734b13156/" alt="LinkedIn" target="_blank" class="social-link">
-        <i class="fab fa-linkedin fa-3x"></i>
-      </a>
-    </div>
-    <div class="email-contact">
-      <a class="email" href="mailto:kacieguthrie@gmail.com">
-        <h3>kacieguthrie@gmail.com</h3>
-      </a>
-    </div>
-
+  <div class="social-link-container">
+    <a href="https://github.com/kacieguthrie" alt="Github" target="_blank" class="social-link">
+      <i class="fab fa-github fa-3x"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/kacie-guthrie-734b13156/" alt="LinkedIn" target="_blank" class="social-link">
+      <i class="fab fa-linkedin fa-3x"></i>
+    </a>
+  </div>
+  <div class="email-contact">
+    <a class="email" href="contact.html">
+      <h3>kacieguthrie@gmail.com</h3>
+    </a>
   </div>
 </section>
 <footer>
-<div class="copyright-text">
-  <h5>Designed and developed by Kacie Guthrie <br>©Kacie Guthrie 2019</h5>
-</div>
+  <div class="copyright-text">
+    <h5>Designed and developed by Kacie Guthrie <br> ©Kacie Guthrie 2019</h5>
+  </div>
 </footer>
 </div>
 </body>

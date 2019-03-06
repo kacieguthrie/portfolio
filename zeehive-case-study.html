@@ -24,45 +24,58 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   </head>
   <body>
-    <nav>
-      <a href="index-2.html" class="nav-logo" alt="kacie guthrie">
-        <h1>kacie</h1><h6>||</h6><h1>guthrie</h1>
-      </a>
+    <div class="nav-wrap">
+      <nav>
+        <a href="index-2.html" class="nav-logo">
+          <h1>kacie</h1><h6>||</h6><h1>guthrie</h1>
+        </a>
 
-      <ul class="nav-links">
-        <li>
-          <a href= "index-2.html#recent-work">work</a>
-        </li>
-        <li>
-          <a href= "about.html">about</a>
-        </li>
-        <li>
-          <a href= "images/global/kacie-guthrie-resume.pdf">resume</a>
-        </li>
-        <li>
-          <a href= "#contact">contact</a>
-        </li>
-      </ul>
-    </nav>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href= "index-2.html#recent-work">work</a>
+          </li>
+          <li>
+            <a href= "about.html">about</a>
+          </li>
+          <li>
+            <a href= "contact.html">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="wrapper">
-      <section>
-            <div class="container-sm">
-              <div class="hero-text">
-                <img src="images/zeehive/zeehive-logo.png" class="image-responsive hero-logo zeehive" alt="zeehive logo">
-                <p id="zeehive-logo-text">zeehive</p>
-                <h3>SaaS cloud storage system for organizing, uploading, and creating content.</h3>
-              </div>
+      <section class="project-hero">
+          <div class="container-sm">
+            <div class="hero-text">
+              <img src="images/zeehive/zeehive-logo.png" class="image-responsive hero-logo zeehive" alt="zeehive logo">
+              <p id="zeehive-logo-text">zeehive</p>
+              <h3>SaaS cloud storage system for organizing, uploading, and creating content.</h3>
             </div>
-            <div class="container-lg">
-              <img src="images/zeehive/zeehive-glam-full.png" alt="" class="image-responsive">
-            </div>
+          </div>
+          <div class="container-lg">
+            <img src="images/zeehive/zeehive-glam-full.png" alt="" class="image-responsive">
+          </div>
       </section>
-
       <!-- Project Summary -->
       <section>
         <div class="highlight">
           <div class="container-sm">
             <div class="flex-row">
+              <ul>
+                <h2>Tools</h2>
+                  <li><p>Figma</p> </li>
+                  <li><p>Google Forms</p></li>
+                  <li><p>Balsamiq</p></li>
+                  <li><p>Invision</p></li>
+                  <li><p>Maze</p></li>
+              </ul>
+              <ul>
+                <h2>Roles</h2>
+                  <li><p>Research</p> </li>
+                  <li><p>UX Design</p></li>
+                  <li><p>UI Components</p></li>
+                  <li><p>Brand Identity</p></li>
+              </ul>
               <ul>
                 <h2>Deliverables</h2>
                   <li><p><a href="#research">User Interviews & Surveys</a></p></li>
@@ -72,22 +85,6 @@
                   <li><p><a href="#brand">Visual Identity</a></p></li>
                   <li><p><a href="#wireframes">Wireframes & Prototype</a></p></li>
                   <li><p><a href="#user-testing">User Testing & Design Iterations</a></p></li>
-              </ul>
-              <ul>
-                <h2>Roles</h2>
-                <img src="images/home/stroke.svg" alt="" class="image-responsive" style="width: 60px; margin-left: -5px;">
-                  <li><p>Research</p> </li>
-                  <li><p>UX Design</p></li>
-                  <li><p>UI Components</p></li>
-                  <li><p>Brand Identity</p></li>
-              </ul>
-              <ul>
-                <h2>Tools</h2>
-                  <li><p>Figma</p> </li>
-                  <li><p>Google Forms</p></li>
-                  <li><p>Balsamiq</p></li>
-                  <li><p>Invision</p></li>
-                  <li><p>Maze</p></li>
               </ul>
             </div>
           </div>
@@ -144,7 +141,7 @@
           </div>
         </div>
           <div class="highlight">
-            <div class="container-lg spacer">
+            <div class="container-sm spacer">
               <h4>Organizing content is a problem for 90% of my users.</h4>
               <ul>
                 <li>
@@ -302,7 +299,7 @@
           </div>
         </div>
           <div class="container-lg">
-            <img src="images/zeehive/note-share.png" alt="Notes Mockup" class="image-responsive image-shadow">
+            <img src="images/zeehive/note-share.png" alt="Notes Mockup" class="image-responsive">
           </div>
           <div class="container-sm">
             <div class="comment-card se">
@@ -314,7 +311,7 @@
             </div>
           </div>
           <div class="container-lg">
-            <img src="images/zeehive/final-grid.png" alt="Final dashboard grid" class="image-responsive image-shadow">
+            <img src="images/zeehive/final-grid.png" alt="Final dashboard grid" class="image-responsive">
           </div>
           <div class="btn-wrapper">
             <div class="btn btn-dark">
@@ -365,7 +362,7 @@
             </div>
           </div>
         </div>
-        <div class="spacer-lg">
+        <div class="spacer">
         </div>
         <div class="container-lg">
           <h3>Marketing Site</h3>
@@ -457,35 +454,31 @@
           </a>
         </div>
         <section class="contact" id="contact">
-          <div class="contact-text">
-            <h1>Currently available for design projects</h1>
-            <div class="btn btn-primary">
+          <h5>Currently available for design projects</h5>
+          <div class="btn btn-primary">
 
-              <a href="mailto:kacieguthrie@gmail.com"><i class="far fa-envelope fa-1x"></i>Let's Connect</a>
-            </div>
+            <a href="contact.html"><i class="far fa-envelope fa-1x"></i>Let's Connect</a>
+          </div>
 
-            <div class="social-link-container">
-              <a href="https://github.com/kacieguthrie" alt="Github" target="_blank" class="social-link">
-                <i class="fab fa-github fa-3x"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/kacie-guthrie-734b13156/" alt="LinkedIn" target="_blank" class="social-link">
-                <i class="fab fa-linkedin fa-3x"></i>
-              </a>
-            </div>
-            <div class="email-contact">
-              <a class="email" href="mailto:kacieguthrie@gmail.com">
-                <h3>kacieguthrie@gmail.com</h3>
-              </a>
-            </div>
-
+          <div class="social-link-container">
+            <a href="https://github.com/kacieguthrie" alt="Github" target="_blank" class="social-link">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kacie-guthrie-734b13156/" alt="LinkedIn" target="_blank" class="social-link">
+              <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+          </div>
+          <div class="email-contact">
+            <a class="email" href="contact.html">
+              <h3>kacieguthrie@gmail.com</h3>
+            </a>
           </div>
         </section>
-      <footer>
-
-        <div class="copyright-text">
-          <h5>Designed and developed by Kacie Guthrie <br>©Kacie Guthrie 2019</h5>
-        </div>
-      </footer>
+        <footer>
+          <div class="copyright-text">
+            <h5>Designed and developed by Kacie Guthrie <br> ©Kacie Guthrie 2019</h5>
+          </div>
+        </footer>
     </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>

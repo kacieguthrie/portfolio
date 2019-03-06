@@ -103,11 +103,11 @@ h3 {
 
 h4 {
   color: var(--color-primary);
-  /* font-family: 'Permanent Marker', sans-serif; */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Permanent Marker', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   font-size: 1.8rem;
   font-weight: 400;
-  letter-spacing: .2px;
+  letter-spacing: .5px;
   line-height: 1.7;
   margin-bottom: 1rem;
 }
@@ -358,6 +358,10 @@ nav {
   text-align: center;
 }
 
+/* animation for thumb-grid*/
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.05); }
+
 .call-out {
   border: solid var(--color-dark) 1px;
   border-radius: 0 40px 40px 40px;
@@ -457,11 +461,6 @@ nav {
   border-right: solid black 1px;
 }
 
-.my-slider > *:last-child{
-  background-color: var(--color-primary);
-  transition-duration: 300ms;
-}
-
 /* _________________________________________Mobile Images */
 .image-responsive {
   display: block;
@@ -509,8 +508,8 @@ nav {
 
 .hover-btn:hover{
   background-color: var(--color-gray);
-  border-radius: 4px;
-  opacity: 1;
+  border-radius: 2px;
+  opacity: .92;
   z-index: 10;
 }
 
@@ -644,7 +643,7 @@ footer {
 }
 
 .project {
-  padding: 4rem 0;
+  padding: 6rem 0 2rem 0;
 }
 
 .project-summary {
@@ -656,7 +655,7 @@ footer {
 }
 
 .project img {
-  width: 30rem;
+  width: 45rem;
 }
 
 .project-text {
@@ -684,6 +683,12 @@ footer {
   width: 30rem;
 }
 
+.arrow-box-center {
+  margin: 0 auto;
+  justify-content: center;
+  padding: 2rem 0 4rem 0;
+}
+
 .arrow-box h6 {
   font-size: 2rem;
 }
@@ -693,6 +698,10 @@ footer {
 }
 
 /* _______________________________________________________Mobile Case Studies */
+.project-hero {
+  margin-bottom: 6rem;
+}
+
 .section-header {
   display: flex;
   align-items: center;
@@ -805,18 +814,12 @@ ul.bullet li p{
 .contact-form {
   padding: 60px 1rem 0 1rem;
   background-color: transparent;
+  z-index: 10;
 }
 
 .contact-form form {
   /* background-color: var(--color-primary); */
   border-radius: 4px;
-}
-
-.deco-2 {
-  animation-duration: 1.5s;
-  animation-name: slidein;
-  position: absolute;
-  z-index: 0;
 }
 
 .contact-input {
@@ -902,7 +905,7 @@ textarea {
   }
 
   h5 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   h6 {
@@ -990,7 +993,7 @@ textarea {
 
 /* ________________________desktop home  */
 .side-heading {
-  transform: rotate(270deg) translate(-260px, -240px);
+  transform: rotate(270deg) translate(-260px, -400px);
 	transform-origin: left top;
 }
 
@@ -1005,6 +1008,10 @@ textarea {
   height: 900px;
   width: 500px;
   margin-top: -300px;
+}
+
+.project {
+  padding: 10rem 0 4rem 0;
 }
 
 /* _________________________________________________________Desktop Containers */
