@@ -114,7 +114,7 @@ h4 {
 
 h5 {
   color: var(--color-dark);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -151,6 +151,10 @@ p a:hover {
 
 li p {
   margin-bottom: .2rem;
+}
+
+footer h5 {
+  font-size: 1rem;
 }
 
 /*_____________________________________________________________Mobile Buttons */
@@ -514,9 +518,6 @@ nav {
 }
 
 /* _____________________________________________________________Mobile footer */
-footer {
-  padding-left: 16px;
-}
 
 .contact {
   color: var(--color-dark);
@@ -591,17 +592,16 @@ footer {
   color: var(--color-primary);
   font-family: "Permanent Marker";
   letter-spacing: 3px;
-  font-size: 3.4rem;
+  font-size: 3rem;
   background: var(--color-light);
-
 }
 
 .deco {
   animation-duration: 1.5s;
   animation-name: slidein;
   position: absolute;
-  padding-top: 200px;
-  margin-left: -4px;
+  padding-top: 180px;
+  margin-left: -20px;
 }
 
 .side-heading {
@@ -876,7 +876,7 @@ textarea {
   }
 
   .mobile-hide {
-    display: inline-block;
+    /* display: inline-block; */
   }
 
   h1  {
