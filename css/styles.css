@@ -138,6 +138,7 @@ p, li {
 p {
   line-height: 1.5;
   margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -251,7 +252,7 @@ nav {
 }
 
 .nav-links li {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding-right: 2rem;
   padding-left: 1rem;
   font-family: 'Roboto Mono', sans-serif;
@@ -283,7 +284,7 @@ nav {
 
 .container-sm {
   display: grid;
-  grid-template-columns: minmax(300px, 630px);
+  grid-template-columns: minmax(300px, 800px);
   justify-content: center;
 }
 
@@ -923,6 +924,8 @@ textarea {
     margin-bottom: .5rem;
   }
 
+
+
   /* Desktop Buttons */
 
   .btn {
@@ -953,93 +956,94 @@ textarea {
     box-shadow: 2px 2px 0 var(--color-primary);
   }
 
-/* Desktop nav */
+  /* Desktop nav */
 
-.nav-logo h1 {
-  font-size: 3.2rem;
+  .nav-logo h1 {
+    font-size: 3.2rem;
+  }
+
+  .nav-logo h6  {
+    line-height: 80%;
+    font-size: 3.8rem;
+    padding: 0 10px;
+    margin-top: 7px;
+  }
+
+  .nav-links li {
+    font-size: 1.6rem;
+    padding-left: 3rem;
+  }
+
+  .active:before{
+    content: '<';
+    font-family: 'Permanent Marker', sans-serif;
+    color: var(--color-primary);
+    margin: 3px 0 0 -25px;
+    font-size: 3rem;
+    line-height: 10%;
+    position: absolute;
+  }
+
+  .active:after{
+    content: '>';
+    font-family: 'Permanent Marker', sans-serif;
+    color: var(--color-primary);
+    margin: 3px 0 0 8px;
+    font-size: 3rem;
+    line-height: 10%;
+    position: absolute;
+  }
+
+  /* ________________________desktop home  */
+  .side-heading {
+    transform: rotate(270deg) translate(-260px, -400px);
+  	transform-origin: left top;
+  }
+
+  .side-heading > *:nth-child(2) {
+    text-decoration: underline;
+    padding-left: 1rem;
+  }
+
+
+  /* desktop hero */
+  .deco {
+    height: 900px;
+    width: 500px;
+    margin-top: -300px;
+  }
+
+  .project {
+    padding: 10rem 0 4rem 0;
+  }
+
+  /* _________________________________________________________Desktop Containers */
+  .container-sm {
+    grid-template-columns: minmax(300px, 600px);
+  }
+
+  .container-half-lg {
+    grid-template-columns: repeat(auto-fit, 43.5rem);
+  }
+
+  .call-out-lg {
+    max-width: 42.5rem;
+  }
+
+
+  .sw {
+    transform: translateX(50px);
+  }
+
+  .ne {
+    transform: translateX(-50px);
+  }
+
+  .nw {
+    transform: translateX(50px);
+  }
+
+  .se {
+    transform: translateX(-50px);
+  }
 }
-
-.nav-logo h6  {
-  line-height: 80%;
-  font-size: 3.8rem;
-  padding: 0 10px;
-  margin-top: 7px;
-}
-
-.nav-links li {
-  font-size: 1.6rem;
-  padding-left: 3rem;
-}
-
-.active:before{
-  content: '<';
-  font-family: 'Permanent Marker', sans-serif;
-  color: var(--color-primary);
-  margin: 3px 0 0 -25px;
-  font-size: 3rem;
-  line-height: 10%;
-  position: absolute;
-}
-
-.active:after{
-  content: '>';
-  font-family: 'Permanent Marker', sans-serif;
-  color: var(--color-primary);
-  margin: 3px 0 0 8px;
-  font-size: 3rem;
-  line-height: 10%;
-  position: absolute;
-}
-
-/* ________________________desktop home  */
-.side-heading {
-  transform: rotate(270deg) translate(-260px, -400px);
-	transform-origin: left top;
-}
-
-.side-heading > *:nth-child(2) {
-  text-decoration: underline;
-  padding-left: 1rem;
-}
-
-
-/* desktop hero */
-.deco {
-  height: 900px;
-  width: 500px;
-  margin-top: -300px;
-}
-
-.project {
-  padding: 10rem 0 4rem 0;
-}
-
-/* _________________________________________________________Desktop Containers */
-.container-half-lg {
-  grid-template-columns: repeat(auto-fit, 43.5rem);
-}
-
-.call-out-lg {
-  max-width: 42.5rem;
-}
-
-
-.sw {
-  transform: translateX(50px);
-}
-
-.ne {
-  transform: translateX(-50px);
-}
-
-.nw {
-  transform: translateX(50px);
-}
-
-.se {
-  transform: translateX(-50px);
-}
-
-/* .icon-text {
-  flex: 1;
-} */
