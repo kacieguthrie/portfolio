@@ -88,9 +88,9 @@ h2 {
 
 }
 
-h2::first-line {
+/* h2::first-line {
   background-color: #FFF;
-}
+} */
 
 h3 {
   font-size: 1.8rem;
