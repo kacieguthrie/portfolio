@@ -312,12 +312,13 @@ nav {
 }
 
 .spacer {
-  margin: 5rem 0 6rem 0;
+  padding: 5rem 0 6rem 0;
 }
 
 .spacer-sm {
   margin: 2rem 0 3rem 0;
 }
+
 /* -------------------------------Specialty Containers Mobile*/
 .highlight {
   background: var(--color-gray);
